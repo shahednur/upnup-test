@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/jboland88/upnup-test.git"
   },
-  "author": "",
+  "author": "Joshua Boland",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jboland88/upnup-test/issues"

@@ -6,16 +6,16 @@
 // Include gulp
 var gulp = require('gulp');
 
-// Include Our Plugins
+// Include Plugins
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var clean = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 
-// Compile Our Sass
+// Compile Sass
 gulp.task('sass', function() {
-    return gulp.src('scss/*/*.scss')
+    return gulp.src('scss/main.scss')
         .pipe(sass())
         .on('error', sass.logError)
         .pipe(gulp.dest('build/css'))
