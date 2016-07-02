@@ -8,6 +8,8 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="build/css/main.min.css">
+
+        <?php include_once("svg-defs.svg"); ?>
     </head>
 
     <body>
@@ -31,9 +33,9 @@
 
 			        <div class="row">
 	        			<div class="xlarge-15 columns">
-			        		<header id="primaryHeader cf">
+			        		<header id="primaryHeader">
 			        			<div class="logo left">
-			        				<img src="http://placehold.it/200x100" alt="logo placehold">
+			        				<img src="img/fontis-logo.png" alt="logo placehold">
 			        			</div>
 			        			<nav id="primaryNav">
 			        				<ul id="primaryNav__list">
@@ -43,7 +45,7 @@
 			        					<li><a href="#">Contact</a></li>
 			        				</ul>
 			        				<div id="primaryNav__logo">
-			        					<img src="http://placehold.it/100x100" alt="logo placehold">
+			        					<img src="img/georgia-grown.png" alt="logo placehold">
 			        				</div>
 			        			</nav>
 			        		</header>
@@ -161,47 +163,57 @@
         	</section>
 
         	<footer id="primaryFooter">
-        		<div class="row">
+        		<div class="row logoContainer">
 					<div class="xlarge-3 columns">
 						<div class="logo">
-							<img src="hgttp://placehold.it/200x100" alt="logo placehold">
+							<img src="img/fontis-logo.png" alt="logo placehold">
 						</div>
 					</div>
         		</div>
 
         		<div class="row">
         			<div class="xlarge-3 columns">
-        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fugit, id. Facilis libero fugit nobis fugiat quos molestiae voluptate perspiciatis voluptatum numquam vitae odio laborum, non expedita magnam maxime doloribus.</p>
+        				<p>Fontis Water<br/>
+        					3929 Cantono Road
+        					Marietta, GA 30066
+        				</p>
+
+        				<p class="phone">678-494-1981</p>
+        				<button class="button button--white button--arrow button--invisible button--nohov">Donation Request</button>
         			</div>
 
         			<div class="xlarge-9 columns">
         				<nav id="footerNav">
-        					<ul>
-        						<li>
-        							<ul>
-        								<li></li>
-        								<li></li>
-        								<li></li>
-        								<li></li>
-        								<li></li>
+        					<ul class="row no-bullets">
+        						<li class="xlarge-5 columns">
+        							<a href="#"><b>Products</b></a>
+        							<ul class="no-bullets">
+        								<li><a href="#">Bottled Water</a></li>
+        								<li><a href="#">Coffe &amp; Tea</a></li>
+        								<li><a href="#">Other Beverages</a></li>
+        								<li><a href="#">Break Room Supplies</a></li>
         							</ul>
         						</li>
-        						<li>
-        							<ul>
-        								<li></li>
-        								<li></li>
-        								<li></li>
-        								<li></li>
-        								<li></li>
+        						<li class="xlarge-5 columns">
+        							<a href=""><b>Services</b></a>
+        							<ul class="no-bullets">
+        								<li><a href="#">Commercial Delivery</a></li>
+        								<li><a href="#">Home Delivery</a></li>
+        								<li><a href="#">Private Label</a></li>
+        								<li><a href="#">Water Filtration</a></li>
+        								<li><a href="#">Break Room Supplies</a></li>
         							</ul>
         						</li>
-        						<li>
-        							<ul>
-        								<li></li>
-        								<li></li>
-        								<li></li>
-        								<li></li>
-        								<li></li>
+        						<li class="xlarge-5 columns">
+        							<a href=""><b>About</b></a>
+        							<ul class="no-bullets">
+        								<li><a href="#">Our Water</a></li>
+        								<li><a href="#">Our Staff</a></li>
+        								<li><a href="#">Company Events</a></li>
+        								<li><a href="#">Partners</a></li>
+        								<li><a href="#">Media Resources</a></li>
+        								<li><a href="#">Blog</a></li>
+        								<li><a href="#">Locations</a></li>
         							</ul>
         						</li>
         					</ul>
@@ -216,9 +228,21 @@
         				</form>
 
         				<ul class="socialLinks">
-        					<li><a href=""></a></li>
-        					<li><a href=""></a></li>
-        					<li><a href=""></a></li>
+        					<li>
+        						<a href="">
+        							<svg class="icon-facebook" width="30" height="30"><use xlink:href="#facebook"></use></svg>
+        						</a>
+        					</li>
+        					<li>
+        						<a href="">
+        							<svg class="icon-twitter" width="30" height="30"><use xlink:href="#twitter"></use></svg>
+        						</a>
+        					</li>
+        					<li>
+        						<a href="">
+        							<svg class="icon-linkedin" width="30" height="30"><use xlink:href="#linkedin"></use></svg>
+        						</a>
+        					</li>
         				</ul>
         			</div>
         		</div>

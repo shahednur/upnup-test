@@ -10,7 +10,8 @@
 	box-sizing: border-box;
 
 	.row{
-		margin: 0 -$column-gutters-normal;
+		margin-left: -$column-gutters-normal;
+		margin-right: -$column-gutters-normal;
 	}
 		
 	//Based on micro-clearfix hack by Nick Gahlagher

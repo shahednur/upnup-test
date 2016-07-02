@@ -45,10 +45,10 @@
 .productCallout__imageContainer{
 	width: 100%;
 	overflow:hidden;
-	max-height: 250px;
+	max-height: 300px;
 
 	//module intersection
 	.forceAspect__dummy{
-		max-height: 250px; //@todo: check on this, magic number not good!
+		padding-bottom: 50%;
 	}
 }

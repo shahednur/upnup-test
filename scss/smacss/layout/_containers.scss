@@ -1,3 +1,9 @@
+#primaryHeader{
+	.logo{
+		max-width: 125px;
+	}
+}
+
 #allNav{
 	position: absolute;
 	top: 0;
@@ -48,6 +54,7 @@
 	display:inline-block;
 	padding: 0 0.75em;
 	padding-right: 0;
+	width: 100px;
 }
 
 #banner{
@@ -83,7 +90,7 @@
 #callout,
 #secondary-callout{
 	background: $light-grey;
-	padding:1em 0;
+	padding:2.5em 0;
 }
 
 #secondary-callout{
@@ -97,6 +104,14 @@
 
 #primaryFooter{
 	background: $dark-grey;
-	padding-top:1.25em;
+	padding:3em 0;
 	color: #FFF;
+
+	.logoContainer{
+		margin-bottom:1.25em;
+	}
+
+	.logo{
+		max-width: 125px;
+	}
 }

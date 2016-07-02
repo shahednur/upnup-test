@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 100">
+    <defs>
+        <style>
+            .cls-1{fill:#ebebeb}
+        </style>
+    </defs>
+    <title>
+        Asset 4
+    </title>
+    <g id="Layer_2" data-name="Layer 2">
+        <path id="Layer_1-2" d="M84.32 0h-68A16.17 16.17 0 0 0 0 16.06v68A16.05 16.05 0 0 0 16.29 100h68c8.96 0 16.71-7 16.71-15.92v-68C101 7.12 93.25 0 84.32 0zM84 27h-5.44c-3 0-6.56 3.09-6.56 7.87V38h12v13H72v41H54V51H43V38h11v-5.07C54 28.45 55.83 14 72.58 14H84z" class="cls-1" data-name="Layer 1"/>
+    </g>
+</svg>
