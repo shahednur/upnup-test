@@ -25,6 +25,10 @@
 	}
 }
 
+.row--expand{
+	max-width: none;
+}
+
 .column,
 .columns{
 	padding: 0 $column-gutters-normal;
@@ -39,6 +43,11 @@
 			float:right;
 		}
 	}
+}
+
+.column--skinny,
+.columns--skinny{
+	padding:0 $column-gutters-skinny;
 }
 
 //mobile sizes (small)

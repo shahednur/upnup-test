@@ -1,0 +1,71 @@
+.button{
+	color: $dark-blue;
+	display: inline-block;
+	font-weight: 600;
+	padding: 0.5em 0.75em;
+	border-radius: 2px;
+	border:2px solid $dark-blue;
+	background: none;
+
+	&:hover{
+		cursor: pointer;
+		background: $dark-blue;
+		color: $white;
+		@include transition(all, 0.25s);
+	}
+}
+
+.button--arrow{
+	position: relative;
+	padding-right: 2.25em;
+	
+	&:before,
+	&:after{
+		display:block;
+		content: "";
+		width: 3px;
+		height: 0.65em;
+		position:absolute;
+		top: 0.75em;
+		right: 1.25em;
+		background: $dark-blue;
+		transform-origin: left top;
+		transform: rotate(-45deg);
+	}
+
+	&:after{
+		top: auto;
+		bottom: 0.75em;
+		transform-origin: left bottom;
+		transform: rotate(45deg);
+	}
+
+	&:hover:before,
+	&:hover:after{
+		@include transition(all, 0.25s);
+		background: $white;
+	}
+}
+
+.button--white{
+	color: $white;
+	border-color: $white;
+
+	&:hover{
+		background: none;
+		color: $dark-blue;
+		border-color: $dark-blue;
+		@include transition(all, 0.25s);
+	}
+	
+	//this is actually provisioning for the arrow subclass
+	&:before,
+	&:after{
+		background: $white;
+	}
+
+	&:hover:before,
+	&:hover:after{
+		background: $dark-blue;
+	}
+}

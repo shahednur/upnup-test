@@ -1,3 +1,13 @@
 body{
 	background: #FFF;
 }
+
+div,
+section,
+nav{
+	box-sizing: border-box;
+	&:before,
+	&:after{
+		box-sizing: border-box;
+	}
+}

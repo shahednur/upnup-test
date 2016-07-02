@@ -19,11 +19,11 @@
         		<section id="allNav">
 	        		<div id="topBar">
 						<div class="row">
-							<div class="xlarge-8 columns">
-								<ul>
-									<li>Login</li>
-									<li></li>
-									<li></li>
+							<div class="xlarge-15 columns">
+								<ul class="inline-list inline-list--separated right">
+									<li><a href="#">Login</a></li>
+									<li><a href="#">Request A Quote</a></li>
+									<li class="bold"><a href="tel:6784941981">678-494-1981</a></li>
 								</ul>
 							</div>
 						</div>
@@ -31,18 +31,20 @@
 
 			        <div class="row">
 	        			<div class="xlarge-15 columns">
-			        		<header id="primaryHeader">
-			        			<div class="logo">
-			        				
+			        		<header id="primaryHeader cf">
+			        			<div class="logo left">
+			        				<img src="http://placehold.it/200x100" alt="logo placehold">
 			        			</div>
 			        			<nav id="primaryNav">
-			        				<ul>
-			        					<li></li>
-			        					<li></li>
-			        					<li></li>
-			        					<li></li>
-			        					<li></li>
+			        				<ul id="primaryNav__list">
+			        					<li><a href="#">Services</a></li>
+			        					<li><a href="#">About</a></li>
+			        					<li><a href="#">Shop</a></li>
+			        					<li><a href="#">Contact</a></li>
 			        				</ul>
+			        				<div id="primaryNav__logo">
+			        					<img src="http://placehold.it/100x100" alt="logo placehold">
+			        				</div>
 			        			</nav>
 			        		</header>
 			        	</div>
@@ -91,11 +93,61 @@
 			</div>
 
         	<section id="products">
-        		<ul>
-        			<li class="productCallout"></li>
-        			<li class="productCallout"></li>
-        			<li class="productCallout"></li>
-        		</ul>
+				<div class="row row--expand">
+					<div class="xlarge-5 columns columns--skinny">
+						<div class="productCallout">
+							<div class="productCallout__imageContainer">
+								<div class="forceAspect">
+									<div class="forceAspect__dummy"></div>
+									<img src="http://placehold.it/500x300" alt="">	
+								</div>
+							</div>
+							<div class="productCallout__overlay">
+								<button class="productcallout__button button button--white button--arrow">Shop Now</button>
+							</div>
+							<h3 class="productCallout__title">
+								Bottled water
+							</h3>
+							<div class="productCallout__gradient"></div>
+						</div>
+					</div>
+
+					<div class="xlarge-5 columns columns--skinny">
+						<div class="productCallout">
+							<div class="productCallout__imageContainer">
+								<div class="forceAspect">
+									<div class="forceAspect__dummy"></div>
+									<img src="http://placehold.it/500x300" alt="">	
+								</div>
+							</div>
+							<div class="productCallout__overlay">
+								<button class="productcallout__button button button--white button--arrow">Shop Now</button>
+							</div>
+							<h3 class="productCallout__title">
+								Bottled water
+							</h3>
+							<div class="productCallout__gradient"></div>
+						</div>
+					</div>
+					
+					<div class="xlarge-5 columns columns--skinny">
+						<div class="productCallout">
+							<div class="productCallout__imageContainer">
+								<div class="forceAspect">
+									<div class="forceAspect__dummy"></div>
+									<img src="http://placehold.it/500x300" alt="">	
+								</div>
+							</div>
+							<div class="productCallout__overlay">
+								<button class="productcallout__button button button--white button--arrow">Shop Now</button>
+							</div>
+							<h3 class="productCallout__title">
+								Bottled water
+							</h3>
+							<div class="productCallout__gradient"></div>
+						</div>
+					</div>
+        		</div>
         	</section>
 
         	<section id="secondary-callout">
@@ -112,7 +164,7 @@
         		<div class="row">
 					<div class="xlarge-3 columns">
 						<div class="logo">
-							
+							<img src="hgttp://placehold.it/200x100" alt="logo placehold">
 						</div>
 					</div>
         		</div>

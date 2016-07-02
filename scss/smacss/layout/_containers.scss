@@ -7,14 +7,47 @@
 }
 
 #topBar{
-	height:30px;
 	width: 100%;
 	background: rgba(0, 0, 0, 0.5);
 	color: #FFF;
+	padding: 0.5em 0;
+	margin-bottom:1em;
 }
 
 #primaryNav{
 	float: right;
+	color: $white;
+}
+
+#primaryNav__list{
+	vertical-align: middle;
+	display:inline-block;
+	padding: 0;
+	font-weight: 400;
+
+	li{
+		display: inline-block;
+		text-transform: uppercase;
+
+		&:last-of-type{
+			border-right: 1px solid $white;
+		}
+
+		a{
+			padding: 0.5em 0.75em;
+
+			&:last-of-type{
+				padding-right:1.5em;
+			}
+		}
+	}
+}
+
+#primaryNav__logo{
+	vertical-align: middle;
+	display:inline-block;
+	padding: 0 0.75em;
+	padding-right: 0;
 }
 
 #banner{
@@ -37,6 +70,7 @@
 	width: 100%;
 	z-index:1;
 	padding-bottom: 1.25em;
+	color: #FFF;
 }
 
 #hero{
