@@ -1,0 +1,60 @@
+/**
+ * Super simple grid based on some of the earlier forms of foundation
+ * Uses the breakpoints porvided in the variables file
+ * operates mobile first
+ */
+
+.row{
+	max-width: $grid-max-width;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+	.row{
+		margin: 0 -$column-gutters-normal;
+	}
+		
+	//Based on micro-clearfix hack by Nick Gahlagher
+	&:before,
+	&:after{
+		content:" ";
+		display: table-cell;
+	}
+
+	&:after{
+		clear: bot;
+	}
+}
+
+.column,
+.columns{
+	padding: 0 $column-gutters-normal;
+	box-sizing: border-box;
+	margin:0;
+	float: left;
+	position: relative;
+	width: 100%;
+
+	&+[class="^column"]{
+		&:last-child{
+			float:right;
+		}
+	}
+}
+
+//mobile sizes (small)
+@for $i from 1 through $grid-columns{	
+	.small-#{$i}{
+		width: percentage($i / $grid-columns);
+	}
+}
+
+//larger sizes
+@each $name, $size in $breakpoints{
+	@include bp($name){
+		@for $i from 1 through $grid-columns{
+			.#{$name}-#{$i}{
+				width: percentage($i / $grid-columns);
+			}
+		}
+	}
+}

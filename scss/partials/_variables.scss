@@ -1,5 +1,14 @@
+//Breakpoints
+//Note, using mobile first approach here, a bit different than
+$breakpoints : (
+	tablet: "(min-width: 767px)",
+	xlarge: "(min-width: 1024px)",
+	huge: "(min-width: 1600px)"
+);
+
 //Grid vars
-$grid-columns: 12;
+$grid-max-width: 1048px;
+$grid-columns: 15;
 $column-gutters-normal: 0.875em;
 $column-gutters-skinny: 0.5em;
 

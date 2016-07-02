@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="build/css/main.min.css">
     </head>
 
     <body>
@@ -19,7 +20,7 @@
 		        			
 		        	</div>
 
-        			<div class="large-12 columns">
+        			<div class="xlarge-15 columns">
 		        		<header id="primaryHeader">
 		        			<div class="logo">
 		        				
@@ -33,7 +34,7 @@
         		</div>
 
         		<div class="row">
-        			<div class="large-8 columns">
+        			<div class="xlarge-8 columns">
         				<h1>Lorem Ipsum</h1>
         				<p class="large-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -48,7 +49,7 @@
 
         	<section id="callout">
         		<div class="row">
-        			<div class="large-8 columns">
+        			<div class="xlarge-8 columns">
         				<h2>We deliver More than Water</h2>
         				<p class="medium-text">lorem ipsum</p>
         				<button class="button">See The Fontis Difference</button> 
@@ -69,7 +70,7 @@
 
         	<section>
         		<div class="row">
-        			<div class="large-12 columns">
+        			<div class="xlarge-15 columns">
         				<h2>Fontis Difference</h2>
         				<p>lorem ipsum</p>
         				<button class="button">Shop Now</button>
@@ -79,7 +80,7 @@
 
         	<footer>
         		<div class="row">
-					<div class="large-3 columns">
+					<div class="xlarge-3 columns">
 						<div class="logo">
 							
 						</div>
@@ -87,11 +88,11 @@
         		</div>
 
         		<div class="row">
-        			<div class="large-3 columns">
-        				
+        			<div class="xlarge-3 columns">
+        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fugit, id. Facilis libero fugit nobis fugiat quos molestiae voluptate perspiciatis voluptatum numquam vitae odio laborum, non expedita magnam maxime doloribus.</p>
         			</div>
 
-        			<div class="large-9 columns">
+        			<div class="xlarge-9 columns">
         				<nav id="footerNav">
         					<ul>
         						<li>
@@ -125,7 +126,7 @@
         				</nav>
         			</div>
 
-        			<div class="large-3 columns">
+        			<div class="xlarge-3 columns">
         				<b>Stay Connected</b>
         				<form action="">
         					<label for="newsletter_subscribe">Sign-Up for Our Newsletter</label>

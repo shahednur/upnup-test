@@ -5,3 +5,9 @@
 @mixin transition($what, $time){
 
 }
+
+@mixin bp($point) {
+  @if map-has-key($breakpoints, $point) {
+    @media #{map-get($breakpoints, $point)} { @content; }
+  }
+}
