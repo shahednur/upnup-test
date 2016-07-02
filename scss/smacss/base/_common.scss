@@ -4,7 +4,9 @@ body{
 
 div,
 section,
-nav{
+nav,
+button,
+input{
 	box-sizing: border-box;
 	
 	&:before,
@@ -15,4 +17,9 @@ nav{
 
 img{
 	max-width: 100%;
+}
+
+input[type="text"],
+input[type="search"]{
+	color: $dark-grey;
 }

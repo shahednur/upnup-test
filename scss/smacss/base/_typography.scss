@@ -19,6 +19,7 @@ h6{
 	-webkit-margin-after: 0;
 	margin-bottom: 0.5em;
 	font-weight: 600;	
+	line-height: 1.1;
 }
 
 h1{font-size: 2em; font-weight: 300;}
@@ -28,9 +29,17 @@ h4{font-size: 1em;}
 h5{font-size: 1em;}
 h6{font-size: 1em;}
 
-ul,p{
+ul,
+p,
+li,
+label{
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
+	line-height: 1.6;
+}
+
+ul,
+p{
 	margin-bottom: 1em;
 }
 
@@ -47,6 +56,8 @@ a{
 
 //weight modifiers
 .light{font-weight: 300;}
+.normal{font-weight: 400;}
+.semibold{font-weight:600;}
 .bold{font-weight: 700}
 
 //size modifiers
@@ -55,6 +66,20 @@ a{
 
 //other modifiers
 .caps{text-transform: uppercase;}
+
+//combo (unique) font styles
+.large-blue-text{
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+	font-weight: 600;
+	color: $light-blue;
+}
+
+
+
+
+
+//-- Media queries -------------------------------//
 
 @include bp(xlarge){
 	h1{

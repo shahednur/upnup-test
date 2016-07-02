@@ -51,6 +51,12 @@
 	padding:0 $column-gutters-skinny;
 }
 
+.column--centered,
+.columns--centered{
+	float:none;
+	margin:0 auto;
+}
+
 //mobile sizes (small)
 @for $i from 1 through $grid-columns{	
 	.small-#{$i}{

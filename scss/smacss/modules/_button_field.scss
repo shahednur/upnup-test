@@ -1,0 +1,35 @@
+.buttonField{
+	margin-bottom: 1em;
+	position: relative;
+
+	input{
+		height:30px;
+		width:calc(100% - 30px);
+		padding:0.25em 0.5em;
+		background: $light-grey;
+		border:none;
+		font-size: 0.8em;
+		border-radius:1px 0 0 1px;
+	}
+
+	button{
+		position: absolute;
+		right:0;
+		background: $light-blue;
+		width: 30px;
+		height: 30px;
+		padding: 7px;
+		border: none;
+		border-radius: 0 1px 1px 0;
+
+		&:hover{
+			cursor: pointer;
+			background: $dark-blue;
+			@include transition(all, 0.25s);
+		}
+
+		svg{
+			fill: $white;
+		}
+	}
+}

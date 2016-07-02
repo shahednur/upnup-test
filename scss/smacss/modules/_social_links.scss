@@ -1,0 +1,21 @@
+.socialLinks{
+	padding-left:0;
+	list-style-type: none;
+	display:flex;
+	justify-content: space-between;
+	
+	& > li{
+		display: inline-block;
+
+		a:hover svg{
+			fill: $white;
+			opacity: 1;
+			@include transition(all, 0.25s);
+		}
+	}
+
+	svg{
+		fill: $light-grey;
+		opacity: 0.2;
+	}
+}

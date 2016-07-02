@@ -56,14 +56,9 @@
 
 	        	<section id="heroText">
 	        		<div class="row">
-	        			<div class="xlarge-8 columns">
-	        				<h1>Lorem Ipsum</h1>
-	        				<p class="large-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	        			<div class="xlarge-10 columns">
+	        				<h1>A precious commodity. Delivered with care.</h1>
+	        				<p class="large-text">Our purified water starts with only 100% natural spring water from the mountains of North Georgia. It is then filtered and processed by reverse osmosis.</p>
 	        				<button class="button button--arrow button--white">Shop Our Products</button>
 	        			</div>
         			</div>
@@ -78,9 +73,9 @@
 				
 			<section id="callout">
         		<div class="row">
-        			<div class="xlarge-8 columns">
-        				<h2>We deliver More than Water</h2>
-        				<p class="medium-text">lorem ipsum</p>
+        			<div class="xlarge-10 columns">
+        				<h2>We deliver more than water. We deliver a promise. </h2>
+        				<p class="medium-text">To some water is water. And coffee is just something you drink in the morning to wake up. But our customers in and around Atlanta demand more. </p>
         				<button class="button">See The Fontis Difference</button> 
         			</div>
         		</div>
@@ -89,7 +84,7 @@
 			<div id="heroContainer">
 				<div class="row">
 					<div class="large-16 columns">
-						<img id="hero" src="http://www.placehold.it/300x1000">
+						<img id="hero" src="img/watercooler.png">
 					</div>
 				</div>
 			</div>
@@ -154,9 +149,9 @@
 
         	<section id="secondary-callout">
         		<div class="row">
-        			<div class="xlarge-15 columns">
-        				<h2>Fontis Difference</h2>
-        				<p>lorem ipsum</p>
+        			<div class="xlarge-7 columns columns--centered">
+        				<h2>Experience the Fontis Difference.</h2>
+        				<p>Shop today and have the fresh, delicious taste of Fontis delivered to your home or office.</p>
         				<button class="button">Shop Now</button>
         			</div>
         		</div>
@@ -173,20 +168,20 @@
 
         		<div class="row">
         			<div class="xlarge-3 columns">
-        				<p>Fontis Water<br/>
+        				<p><span class="semibold">Fontis Water</span><br/>
         					3929 Cantono Road
         					Marietta, GA 30066
         				</p>
 
-        				<p class="phone">678-494-1981</p>
+        				<p class="phone large-blue-text">678-494-1981</p>
         				<button class="button button--white button--arrow button--invisible button--nohov">Donation Request</button>
         			</div>
 
         			<div class="xlarge-9 columns">
         				<nav id="footerNav">
         					<ul class="row no-bullets">
-        						<li class="xlarge-5 columns">
-        							<a href="#"><b>Products</b></a>
+        						<li class="footerNav__list xlarge-5 columns">
+        							<a href="#" class="semibold">Products</a>
         							<ul class="no-bullets">
         								<li><a href="#">Bottled Water</a></li>
         								<li><a href="#">Coffe &amp; Tea</a></li>
@@ -194,8 +189,8 @@
         								<li><a href="#">Break Room Supplies</a></li>
         							</ul>
         						</li>
-        						<li class="xlarge-5 columns">
-        							<a href=""><b>Services</b></a>
+        						<li class="footerNav__list xlarge-5 columns">
+        							<a href="" class="semibold">Services</a>
         							<ul class="no-bullets">
         								<li><a href="#">Commercial Delivery</a></li>
         								<li><a href="#">Home Delivery</a></li>
@@ -204,8 +199,8 @@
         								<li><a href="#">Break Room Supplies</a></li>
         							</ul>
         						</li>
-        						<li class="xlarge-5 columns">
-        							<a href=""><b>About</b></a>
+        						<li class="footerNav__list xlarge-5 columns">
+        							<a href class="semibold"="">About</a>
         							<ul class="no-bullets">
         								<li><a href="#">Our Water</a></li>
         								<li><a href="#">Our Staff</a></li>
@@ -221,26 +216,31 @@
         			</div>
 
         			<div class="xlarge-3 columns">
-        				<b>Stay Connected</b>
+        				<p class="semibold">Stay Connected</p>
         				<form action="">
         					<label for="newsletter_subscribe">Sign-Up for Our Newsletter</label>
-        					<input type="text" id="newsletter_subscribe" name="email">
+        					<div class="buttonField">
+        						<input type="text" id="newsletter_subscribe" name="email" placeholder="Enter Your Email">
+        						<button type="submit" name="submit">
+        							<svg class="icon-plane" width="15" height="15"><use xlink:href="#airplane"></use></svg>
+        						</button>
+        					</div>
         				</form>
 
         				<ul class="socialLinks">
         					<li>
         						<a href="">
-        							<svg class="icon-facebook" width="30" height="30"><use xlink:href="#facebook"></use></svg>
+        							<svg class="icon-facebook" width="45" height="45"><use xlink:href="#facebook"></use></svg>
         						</a>
         					</li>
         					<li>
         						<a href="">
-        							<svg class="icon-twitter" width="30" height="30"><use xlink:href="#twitter"></use></svg>
+        							<svg class="icon-twitter" width="45" height="45"><use xlink:href="#twitter"></use></svg>
         						</a>
         					</li>
         					<li>
         						<a href="">
-        							<svg class="icon-linkedin" width="30" height="30"><use xlink:href="#linkedin"></use></svg>
+        							<svg class="icon-linkedin" width="45" height="45"><use xlink:href="#linkedin"></use></svg>
         						</a>
         					</li>
         				</ul>

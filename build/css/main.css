@@ -387,7 +387,8 @@ h6 {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   margin-bottom: 0.5em;
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: 1.1; }
 
 h1 {
   font-size: 2em;
@@ -408,9 +409,16 @@ h5 {
 h6 {
   font-size: 1em; }
 
-ul, p {
+ul,
+p,
+li,
+label {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
+  line-height: 1.6; }
+
+ul,
+p {
   margin-bottom: 1em; }
 
 a {
@@ -424,6 +432,12 @@ a {
 .light {
   font-weight: 300; }
 
+.normal {
+  font-weight: 400; }
+
+.semibold {
+  font-weight: 600; }
+
 .bold {
   font-weight: 700; }
 
@@ -436,6 +450,12 @@ a {
 .caps {
   text-transform: uppercase; }
 
+.large-blue-text {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  color: #8FAFBF; }
+
 @media (min-width: 1024px) {
   h1 {
     font-size: 3.75em; } }
@@ -445,17 +465,27 @@ body {
 
 div,
 section,
-nav {
+nav,
+button,
+input {
   box-sizing: border-box; }
   div:before, div:after,
   section:before,
   section:after,
   nav:before,
-  nav:after {
+  nav:after,
+  button:before,
+  button:after,
+  input:before,
+  input:after {
     box-sizing: border-box; }
 
 img {
   max-width: 100%; }
+
+input[type="text"],
+input[type="search"] {
+  color: #312D2E; }
 
 /**
  * Super simple grid based on some of the earlier forms of foundation
@@ -493,6 +523,11 @@ img {
 .column--skinny,
 .columns--skinny {
   padding: 0 0.25em; }
+
+.column--centered,
+.columns--centered {
+  float: none;
+  margin: 0 auto; }
 
 .small-1 {
   width: 6.66667%; }
@@ -692,13 +727,14 @@ img {
   bottom: 0;
   width: 100%;
   z-index: 1;
-  padding-bottom: 1.25em;
+  padding-bottom: 2em;
   color: #FFF; }
 
 #hero {
   position: absolute;
   bottom: 0;
-  right: 0.875em; }
+  right: 0.875em;
+  max-width: 325px; }
 
 #callout,
 #secondary-callout {
@@ -880,3 +916,53 @@ img {
   max-height: 300px; }
   .productCallout__imageContainer .forceAspect__dummy {
     padding-bottom: 50%; }
+
+.socialLinks {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between; }
+  .socialLinks > li {
+    display: inline-block; }
+    .socialLinks > li a:hover svg {
+      fill: #FFFFFF;
+      opacity: 1;
+      transition: all 0.25s; }
+  .socialLinks svg {
+    fill: #EBEBEB;
+    opacity: 0.2; }
+
+.buttonField {
+  margin-bottom: 1em;
+  position: relative; }
+  .buttonField input {
+    height: 30px;
+    width: calc(100% - 30px);
+    padding: 0.25em 0.5em;
+    background: #EBEBEB;
+    border: none;
+    font-size: 0.8em;
+    border-radius: 1px 0 0 1px; }
+  .buttonField button {
+    position: absolute;
+    right: 0;
+    background: #8FAFBF;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border: none;
+    border-radius: 0 1px 1px 0; }
+    .buttonField button:hover {
+      cursor: pointer;
+      background: #162F4C;
+      transition: all 0.25s; }
+    .buttonField button svg {
+      fill: #FFFFFF; }
+
+.footerNav__list > a,
+.footerNav__list li {
+  display: block;
+  margin-bottom: 0.25em; }
+
+.footerNav__list li, .footerNav__list a {
+  color: #EBEBEB; }
