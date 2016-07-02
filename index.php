@@ -15,50 +15,80 @@
         <div id="page">
         	
         	<section id="banner">
-        		<div class="row">
-        			<div id="topBar">
-		        			
-		        	</div>
 
-        			<div class="xlarge-15 columns">
-		        		<header id="primaryHeader">
-		        			<div class="logo">
-		        				
-		        			</div>
-		        			<nav id="primaryNav">
-		        				
-		        			</nav>
-		        		</header>
-		        	</div>
+        		<section id="allNav">
+	        		<div id="topBar">
+						<div class="row">
+							<div class="xlarge-8 columns">
+								<ul>
+									<li>Login</li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+			        </div>
 
-        		</div>
+			        <div class="row">
+	        			<div class="xlarge-15 columns">
+			        		<header id="primaryHeader">
+			        			<div class="logo">
+			        				
+			        			</div>
+			        			<nav id="primaryNav">
+			        				<ul>
+			        					<li></li>
+			        					<li></li>
+			        					<li></li>
+			        					<li></li>
+			        					<li></li>
+			        				</ul>
+			        			</nav>
+			        		</header>
+			        	</div>
 
-        		<div class="row">
-        			<div class="xlarge-8 columns">
-        				<h1>Lorem Ipsum</h1>
-        				<p class="large-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        				<button class="button button--arrow button--white">Shop Our Products</button>
+	        		</div>
+	        	</section>
+
+	        	<section id="heroText">
+	        		<div class="row">
+	        			<div class="xlarge-8 columns">
+	        				<h1>Lorem Ipsum</h1>
+	        				<p class="large-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	        				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	        				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	        				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	        				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	        				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	        				<button class="button button--arrow button--white">Shop Our Products</button>
+	        			</div>
         			</div>
-        		</div> 
-        	</section>
+        		</section> 
 
-        	<section id="callout">
+        		<div id="bannerImgWrap" class="forceAspect">
+        			<div class="forceAspect__dummy"></div>
+					<img src="http://placehold.it/1000x500" alt="sunrise over the mountains" id="bannerImg"/>
+				</div>
+
+        	</section>
+				
+			<section id="callout">
         		<div class="row">
         			<div class="xlarge-8 columns">
         				<h2>We deliver More than Water</h2>
         				<p class="medium-text">lorem ipsum</p>
         				<button class="button">See The Fontis Difference</button> 
         			</div>
-        			<div id="hero">
-        				<img src="http://www.placehold.it/300x1000">
-        			</div> 
         		</div>
         	</section>
+			
+			<div id="heroContainer">
+				<div class="row">
+					<div class="large-16 columns">
+						<img id="hero" src="http://www.placehold.it/300x1000">
+					</div>
+				</div>
+			</div>
 
         	<section id="products">
         		<ul>
@@ -68,7 +98,7 @@
         		</ul>
         	</section>
 
-        	<section>
+        	<section id="secondary-callout">
         		<div class="row">
         			<div class="xlarge-15 columns">
         				<h2>Fontis Difference</h2>
@@ -78,7 +108,7 @@
         		</div>
         	</section>
 
-        	<footer>
+        	<footer id="primaryFooter">
         		<div class="row">
 					<div class="xlarge-3 columns">
 						<div class="logo">

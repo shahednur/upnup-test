@@ -1,0 +1,20 @@
+.forceAspect{
+	position: relative;
+	width:100%;
+
+	img{
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height: auto;
+	}
+}
+
+.forceAspect__dummy{
+	position: relative;
+	top:0;
+	left:0;
+	padding-bottom: 45%; //this can be over-ridden a the layout level for different effects?
+	width: 100%;
+}

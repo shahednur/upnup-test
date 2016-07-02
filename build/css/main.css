@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700);
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -368,6 +369,58 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+body {
+  -webkit-margin-top: 0;
+  -webkit-margin-bottom: 0;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', Helvetica, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-margin-top: 0;
+  -webkit-margin-bottom: 0;
+  margin-bottom: 0.5em; }
+
+h1 {
+  font-size: 2em;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.75em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.25em; }
+
+h5 {
+  font-size: 1em; }
+
+h6 {
+  font-size: 1em; }
+
+.light {
+  font-weight: 300; }
+
+.bold {
+  font-weight: 700; }
+
+.large-text {
+  font-size: 1.25em; }
+
+.xlarge-text {
+  font-size: 1.5em; }
+
+body {
+  background: #FFF; }
+
 /**
  * Super simple grid based on some of the earlier forms of foundation
  * Uses the breakpoints porvided in the variables file
@@ -381,9 +434,9 @@ textarea {
     margin: -0.875em; }
   .row:before, .row:after {
     content: " ";
-    display: table-cell; }
+    display: table; }
   .row:after {
-    clear: bot; }
+    clear: both; }
 
 .column,
 .columns {
@@ -537,3 +590,74 @@ textarea {
     width: 93.33333%; }
   .huge-15 {
     width: 100%; } }
+
+#allNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; }
+
+#topBar {
+  height: 30px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF; }
+
+#primaryNav {
+  float: right; }
+
+#banner {
+  position: relative;
+  overflow: hidden; }
+
+#bannerImgWrap {
+  z-index: 0; }
+  #bannerImgWrap > .forceAspect__dummy {
+    padding-bottom: 645px; }
+
+#heroText {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  padding-bottom: 1.25em; }
+
+#hero {
+  position: absolute;
+  bottom: 0;
+  right: 0.875em; }
+
+#callout,
+#secondary-callout {
+  background: #EBEBEB;
+  padding: 1em 0; }
+
+#secondary-callout {
+  text-align: center; }
+
+#products {
+  background: #FFFFFF;
+  padding: 0.5em; }
+
+#primaryFooter {
+  background: #312D2E;
+  padding-top: 1.25em;
+  color: #FFF; }
+
+.forceAspect {
+  position: relative;
+  width: 100%; }
+  .forceAspect img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; }
+
+.forceAspect__dummy {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-bottom: 45%;
+  width: 100%; }

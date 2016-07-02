@@ -1,0 +1,68 @@
+#allNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+#topBar{
+	height:30px;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+}
+
+#primaryNav{
+	float: right;
+}
+
+#banner{
+	position: relative;
+	overflow: hidden;
+}
+
+#bannerImgWrap{
+	z-index: 0;
+	
+	//this is overriding a module that is used to create a layout
+	& > .forceAspect__dummy{
+		padding-bottom: 645px;
+	}
+}
+
+#heroText{
+	position: absolute;
+	bottom:0;
+	width: 100%;
+	z-index:1;
+	padding-bottom: 1.25em;
+}
+
+#hero{
+	position:absolute;
+	bottom:0;
+	right: $column-gutters-normal;
+}
+
+
+#callout,
+#secondary-callout{
+	background: $light-grey;
+	padding:1em 0;
+}
+
+#secondary-callout{
+	text-align: center;
+}
+
+#products{
+	background: $white;
+	padding:0.5em;
+}
+
+#primaryFooter{
+	background: $dark-grey;
+	padding-top:1.25em;
+	color: #FFF;
+}

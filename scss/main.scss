@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700);
+
 @import "partials/variables";
 @import "partials/_mixins";
 
@@ -7,3 +9,5 @@
 
 @import "smacss/layout/grid";
 @import "smacss/layout/containers";
+
+@import "smacss/modules/force_aspect";
