@@ -22,7 +22,7 @@
 	        		<div id="topBar" class="hide-for-xlarge-down">
 						<div class="row">
 							<div class="xlarge-15 columns">
-								<ul class="inline-list inline-list--separated right">
+								<ul class="inline-list inline-list--separated inline-list--right inline-list--no-mb right normal">
 									<li><a href="#">Login</a></li>
 									<li><a href="#">Request A Quote</a></li>
 									<li class="bold"><a href="tel:6784941981">678-494-1981</a></li>
@@ -102,8 +102,8 @@
 							<div class="productCallout__imageContainer">
 								<div class="forceAspect">
 									<div class="forceAspect__dummy"></div>
-									<div class="forceAspect__img-wrap">
-										<img src="http://placehold.it/500x300" alt="">	
+									<div class="forceAspect__img-wrap forceAspect__img-wrap--snap">
+										<img src="http://placehold.it/700x500" alt="">	
 									</div>
 								</div>
 							</div>
@@ -122,8 +122,8 @@
 							<div class="productCallout__imageContainer">
 								<div class="forceAspect">
 									<div class="forceAspect__dummy"></div>
-									<div class="forceAspect__img-wrap">
-										<img src="http://placehold.it/500x300" alt="">	
+									<div class="forceAspect__img-wrap forceAspect__img-wrap--snap">
+										<img src="http://placehold.it/700x500" alt="">	
 									</div>
 								</div>
 							</div>
@@ -142,8 +142,8 @@
 							<div class="productCallout__imageContainer">
 								<div class="forceAspect">
 									<div class="forceAspect__dummy"></div>
-									<div class="forceAspect__img-wrap">
-										<img src="http://placehold.it/500x300" alt="">	
+									<div class="forceAspect__img-wrap forceAspect__img-wrap--snap">
+										<img src="http://placehold.it/700x500" alt="">	
 									</div>
 								</div>
 							</div>
@@ -191,10 +191,10 @@
 
         			<div class="xlarge-9 columns">
         				<nav id="footerNav">
-        					<ul class="no-bullets footerNav__list row">
+        					<ul class="no-bullets nested-list row hide-for-tablet-only">
         						<li class="xlarge-5 tablet-3 columns">
         							<a href="#" class="semibold">Products</a>
-        							<ul class="footerNav__sub-list no-bullets">
+        							<ul class="nested-list__sub-list no-bullets">
         								<li><a href="#">Bottled Water</a></li>
         								<li><a href="#">Coffe &amp; Tea</a></li>
         								<li><a href="#">Other Beverages</a></li>
@@ -203,7 +203,7 @@
         						</li>
         						<li class="xlarge-5 tablet-3 columns">
         							<a href="" class="semibold">Services</a>
-        							<ul class="footerNav__sub-list no-bullets">
+        							<ul class="nested-list__sub-list no-bullets">
         								<li><a href="#">Commercial Delivery</a></li>
         								<li><a href="#">Home Delivery</a></li>
         								<li><a href="#">Private Label</a></li>
@@ -213,7 +213,7 @@
         						</li>
         						<li class="xlarge-5 tablet-3 columns">
         							<a href class="semibold"="">About</a>
-        							<ul class="footerNav__sub-list no-bullets">
+        							<ul class="nested-list__sub-list no-bullets">
         								<li><a href="#">Our Water</a></li>
         								<li><a href="#">Our Staff</a></li>
         								<li><a href="#">Company Events</a></li>
@@ -224,11 +224,17 @@
         							</ul>
         						</li>
         					</ul>
+
+        					<ul class="footerNav__list--tablet no-bullets show-for-tablet-only inline-list inline-list--separated inline-list--uniform bold">
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">About</a></li>
+        					</ul>
         				</nav>
         			</div>
 
-        			<div id="connectInfo" class="xlarge-3 columns">
-        				<p class="semibold">Stay Connected</p>
+        			<div id="connectInfo" class="xlarge-3 columns columns--skinny">
+        				<p class="semibold last">Stay Connected</p>
         				<form action="">
         					<label for="newsletter_subscribe">Sign-Up for Our Newsletter</label>
         					<div class="buttonField">
@@ -256,6 +262,8 @@
         						</a>
         					</li>
         				</ul>
+
+        				<button class="button button--white button--arrow button--invisible button--nohov show-for-tablet-down">Donation Request</button>
         			</div>
         		</div>
         	</footer>

@@ -22,7 +22,7 @@ h6{
 	line-height: 1.1;
 }
 
-h1{font-size: 2em; font-weight: 300;}
+h1{font-size: 2.25em; font-weight: 300;}
 h2{font-size: 1.5em;}
 h3{font-size: 1.25em;}
 h4{font-size: 1em;}
@@ -82,7 +82,5 @@ a{
 //-- Media queries -------------------------------//
 
 @include bp(xlarge){
-	h1{
-		font-size: 3.75em;
-	}
+	h1{ font-size: 3.75em; }
 }

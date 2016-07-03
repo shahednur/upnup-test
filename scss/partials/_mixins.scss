@@ -70,3 +70,9 @@
     @media screen and ( max-width: #{map-get($breakpoints, $point)-1}px){ @content; }
   }
 }
+
+@mixin bp-range($low, $high) {
+  @if map-has-key($breakpoints, $low) and map-has-key($breakpoints, $high) {
+    @media screen and ( min-width: #{map-get($breakpoints, $low)}px) and ( max-width: #{map-get($breakpoints, $high)-1}px){ @content; }
+  }
+}

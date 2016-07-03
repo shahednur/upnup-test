@@ -32,6 +32,10 @@
 	color: $white;
 	font-weight: 600;
 	font-size: 1.25em;
+
+	@include bp-max(xlarge){
+		font-size: 1.125em;
+	}
 }
 
 .productCallout__overlay{
@@ -59,7 +63,7 @@
 .productCallout__imageContainer{
 	width: 100%;
 	overflow:hidden;
-	max-height: 300px;
+	max-height: 350px;
 
 	//module intersection
 	.forceAspect__dummy{

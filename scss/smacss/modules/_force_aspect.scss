@@ -19,24 +19,17 @@
 	}
 }
 
+.forceAspect__img-wrap--snap{
+	img{
+		height: auto;
+		width: 34%;
+	}
+}
+
 .forceAspect__dummy{
 	position: relative;
 	top:0;
 	left:0;
-	padding-bottom: 45%; //this can be over-ridden a the layout level for different effects?
+	padding-bottom: 50%; //this can be over-ridden a the layout level for different effects?
 	width: 100%;
-}
-
-@include bp(xlarge){
-	.forceAspect__img-wrap{
-		width:100%;
-		left:0;
-
-		img{
-			display:inline;
-			max-width:100%;
-			width: 100%;
-			height:auto;
-		}
-	}
 }

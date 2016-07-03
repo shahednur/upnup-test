@@ -22,4 +22,10 @@ img{
 input[type="text"],
 input[type="search"]{
 	color: $dark-grey;
+	display:block;
+}
+
+label{
+	margin-bottom:0.25em;
+	display:inline-block;
 }
