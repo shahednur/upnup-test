@@ -1,4 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+	<symbol id="arrow" viewBox="0 0 11.8 18.9">
+    	<path id="Layer_1" d="M3 18.4L1.6 17l7.2-7.2-7.3-8.2L3 .3l7.9 8.9c.4.4.3 1 0 1.4L3 18.4z"/>
+    </symbol>
     <symbol id="airplane" viewBox="0 0 143.5 123">
     	<path id="Layer_1-2" d="M.07 123L143.5 61.5.07 0 0 47.83 102.5 61.5 0 75.17z" class="cls-1" data-name="Layer 1"/>
     </symbol>

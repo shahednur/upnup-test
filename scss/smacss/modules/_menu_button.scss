@@ -25,6 +25,7 @@
 		position: absolute;
 		bottom: 200%;
 		left: 0;
+		@include transition(transform, 0.25s);
 	}
 
 	&:after{
@@ -41,12 +42,14 @@
 			transform-origin:top left;
 			transform: rotate(45deg);
 			bottom:250%;
+			@include transition(transform, 0.25s);
 		}
 
 		&:after{
 			transform-origin: bottom left;
 			transform: rotate(-45deg);
 			bottom: -250%;
+			@include transition(transform, 0.25s);
 		}
 	}
 }

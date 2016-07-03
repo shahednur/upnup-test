@@ -1,0 +1,44 @@
+.stackedList{
+	li a,
+	li span{
+		width: 100%;
+		display:block;
+		box-sizing: border-box;
+		padding: 1em;
+
+		&:hover{
+			color: $dark-grey;
+		}
+	}
+	
+	font-weight: 400;
+	padding: 0;
+	color: $white;
+	list-style:none;
+	margin-bottom:0;
+	text-align: center;
+	
+	&>li{
+		border-bottom: 1px solid $white;
+		&:last-of-type{
+			border-bottom: 0;
+		}
+	}
+}
+
+.stackedList--wrapped{
+	background: $light-grey;
+	padding:0 1em;
+	
+	&>li{
+		border-color: $light-blue;
+	}
+
+	li a,
+	li span{
+		color: $dark-grey;
+		&:hover{
+			color: #000;
+		}
+	}
+}

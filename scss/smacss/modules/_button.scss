@@ -19,58 +19,44 @@
 	padding-left:0;
 	padding-right:0;
 	border-width: 0;	
+
+	&:hover{
+		background: none;
+	}
 }
 
 .button--arrow{
 	position: relative;
-	padding-right: 2.25em;
+	padding-right: 2.5em;
+
+	.icon-arrow{
+		display:inline-block;
+		fill: $white;
+		stroke: $white;
+		margin-left: .5em;
+		position: absolute;
+		top: 50%;
+		right: 1em;
+		transform: translateY(-50%);
+	}
 	
-	&:before,
-	&:after{
-		display:block;
-		content: "";
-		width: 3px;
-		height: 0.65em;
-		position:absolute;
-		top: 0.75em;
-		right: 1.25em;
-		background: $dark-blue;
-		transform-origin: left top;
-		transform: rotate(-45deg);
-	}
+	//combo case
+	&.button--invisible{
+		padding-right: 1.25em;
 
-	&:after{
-		top: auto;
-		bottom: 0.75em;
-		transform-origin: left bottom;
-		transform: rotate(45deg);
-	}
-
-	&:hover:before,
-	&:hover:after{
-		@include transition(all, 0.25s);
-		background: $white;
+		.icon-arrow{
+			right: 0;
+		}
 	}
 }
 
 .button--white{
 	color: $white;
 	border-color: $white;
-	
-	//this is actually provisioning for the arrow subclass
-	&:before,
-	&:after{
-		background: $white;
-	}
 }
 
 .button--nohov{
 	&:hover{
 		color: inherit;
-	}
-
-	&:hover:before,
-	&:hover:after{
-		background: $white; //FIXME: this is cheating a little...
 	}
 }
