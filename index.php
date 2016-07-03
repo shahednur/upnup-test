@@ -19,7 +19,7 @@
         	<section id="banner">
 
         		<section id="allNav">
-	        		<div id="topBar">
+	        		<div id="topBar" class="hide-for-xlarge-down">
 						<div class="row">
 							<div class="xlarge-15 columns">
 								<ul class="inline-list inline-list--separated right">
@@ -37,7 +37,7 @@
 			        			<div class="logo left">
 			        				<img src="img/fontis-logo.png" alt="logo placehold">
 			        			</div>
-			        			<nav id="primaryNav">
+			        			<nav id="primaryNav" class="hide-for-xlarge-down">
 			        				<ul id="primaryNav__list">
 			        					<li><a href="#">Services</a></li>
 			        					<li><a href="#">About</a></li>
@@ -48,6 +48,9 @@
 			        					<img src="img/georgia-grown.png" alt="logo placehold">
 			        				</div>
 			        			</nav>
+			        			<button class="menuButton right hide-for-xlarge-up right">
+			        				<span class="menuButton__icon"></span>
+			        			</button>
 			        		</header>
 			        	</div>
 
@@ -56,9 +59,9 @@
 
 	        	<section id="heroText">
 	        		<div class="row">
-	        			<div class="xlarge-10 columns">
+	        			<div class="xlarge-10 tablet-7 columns">
 	        				<h1>A precious commodity. Delivered with care.</h1>
-	        				<p class="large-text">Our purified water starts with only 100% natural spring water from the mountains of North Georgia. It is then filtered and processed by reverse osmosis.</p>
+	        				<p class="large-text hide-for-tablet-down">Our purified water starts with only 100% natural spring water from the mountains of North Georgia. It is then filtered and processed by reverse osmosis.</p>
 	        				<button class="button button--arrow button--white">Shop Our Products</button>
 	        			</div>
         			</div>
@@ -66,16 +69,19 @@
 
         		<div id="bannerImgWrap" class="forceAspect">
         			<div class="forceAspect__dummy"></div>
-					<img src="http://placehold.it/1000x500" alt="sunrise over the mountains" id="bannerImg"/>
+        			<div class="forceAspect__img-wrap">
+						<img src="img/banner.jpg" alt="sunrise over the mountains" id="bannerImg"/>
+					</div>
 				</div>
-
+				
+				<div class="overlay"></div>
         	</section>
 				
-			<section id="callout">
+			<section id="callout" class="hide-for-tablet-down">
         		<div class="row">
-        			<div class="xlarge-10 columns">
+        			<div class="xlarge-10 tablet-7 columns">
         				<h2>We deliver more than water. We deliver a promise. </h2>
-        				<p class="medium-text">To some water is water. And coffee is just something you drink in the morning to wake up. But our customers in and around Atlanta demand more. </p>
+        				<p class="medium-text hide-for-xlarge-down">To some water is water. And coffee is just something you drink in the morning to wake up. But our customers in and around Atlanta demand more. </p>
         				<button class="button">See The Fontis Difference</button> 
         			</div>
         		</div>
@@ -90,17 +96,19 @@
 			</div>
 
         	<section id="products">
-				<div class="row row--expand">
-					<div class="xlarge-5 columns columns--skinny">
+				<div class="row row--expand row--collapse">
+					<div class="xlarge-5 tablet-5 columns columns--skinny">
 						<div class="productCallout">
 							<div class="productCallout__imageContainer">
 								<div class="forceAspect">
 									<div class="forceAspect__dummy"></div>
-									<img src="http://placehold.it/500x300" alt="">	
+									<div class="forceAspect__img-wrap">
+										<img src="http://placehold.it/500x300" alt="">	
+									</div>
 								</div>
 							</div>
 							<div class="productCallout__overlay">
-								<button class="productcallout__button button button--white button--arrow">Shop Now</button>
+								<button class="productCallout__button button button--white button--arrow">Shop Now</button>
 							</div>
 							<h3 class="productCallout__title">
 								Bottled water
@@ -109,37 +117,41 @@
 						</div>
 					</div>
 
-					<div class="xlarge-5 columns columns--skinny">
+					<div class="xlarge-5 tablet-5 columns columns--skinny">
 						<div class="productCallout">
 							<div class="productCallout__imageContainer">
 								<div class="forceAspect">
 									<div class="forceAspect__dummy"></div>
-									<img src="http://placehold.it/500x300" alt="">	
+									<div class="forceAspect__img-wrap">
+										<img src="http://placehold.it/500x300" alt="">	
+									</div>
 								</div>
 							</div>
 							<div class="productCallout__overlay">
-								<button class="productcallout__button button button--white button--arrow">Shop Now</button>
+								<button class="productCallout__button button button--white button--arrow">Shop Now</button>
 							</div>
 							<h3 class="productCallout__title">
-								Bottled water
+								Coffee and Tea
 							</h3>
 							<div class="productCallout__gradient"></div>
 						</div>
 					</div>
 					
-					<div class="xlarge-5 columns columns--skinny">
+					<div class="xlarge-5 tablet-5 columns columns--skinny">
 						<div class="productCallout">
 							<div class="productCallout__imageContainer">
 								<div class="forceAspect">
 									<div class="forceAspect__dummy"></div>
-									<img src="http://placehold.it/500x300" alt="">	
+									<div class="forceAspect__img-wrap">
+										<img src="http://placehold.it/500x300" alt="">	
+									</div>
 								</div>
 							</div>
 							<div class="productCallout__overlay">
-								<button class="productcallout__button button button--white button--arrow">Shop Now</button>
+								<button class="productCallout__button button button--white button--arrow">Shop Now</button>
 							</div>
 							<h3 class="productCallout__title">
-								Bottled water
+								Water Filtration
 							</h3>
 							<div class="productCallout__gradient"></div>
 						</div>
@@ -149,7 +161,7 @@
 
         	<section id="secondary-callout">
         		<div class="row">
-        			<div class="xlarge-7 columns columns--centered">
+        			<div class="xlarge-7 tablet-9 small-12 columns columns--centered">
         				<h2>Experience the Fontis Difference.</h2>
         				<p>Shop today and have the fresh, delicious taste of Fontis delivered to your home or office.</p>
         				<button class="button">Shop Now</button>
@@ -174,24 +186,24 @@
         				</p>
 
         				<p class="phone large-blue-text">678-494-1981</p>
-        				<button class="button button--white button--arrow button--invisible button--nohov">Donation Request</button>
+        				<button class="button button--white button--arrow button--invisible button--nohov hide-for-xlarge-down">Donation Request</button>
         			</div>
 
         			<div class="xlarge-9 columns">
         				<nav id="footerNav">
-        					<ul class="row no-bullets">
-        						<li class="footerNav__list xlarge-5 columns">
+        					<ul class="no-bullets footerNav__list row">
+        						<li class="xlarge-5 tablet-3 columns">
         							<a href="#" class="semibold">Products</a>
-        							<ul class="no-bullets">
+        							<ul class="footerNav__sub-list no-bullets">
         								<li><a href="#">Bottled Water</a></li>
         								<li><a href="#">Coffe &amp; Tea</a></li>
         								<li><a href="#">Other Beverages</a></li>
         								<li><a href="#">Break Room Supplies</a></li>
         							</ul>
         						</li>
-        						<li class="footerNav__list xlarge-5 columns">
+        						<li class="xlarge-5 tablet-3 columns">
         							<a href="" class="semibold">Services</a>
-        							<ul class="no-bullets">
+        							<ul class="footerNav__sub-list no-bullets">
         								<li><a href="#">Commercial Delivery</a></li>
         								<li><a href="#">Home Delivery</a></li>
         								<li><a href="#">Private Label</a></li>
@@ -199,9 +211,9 @@
         								<li><a href="#">Break Room Supplies</a></li>
         							</ul>
         						</li>
-        						<li class="footerNav__list xlarge-5 columns">
+        						<li class="xlarge-5 tablet-3 columns">
         							<a href class="semibold"="">About</a>
-        							<ul class="no-bullets">
+        							<ul class="footerNav__sub-list no-bullets">
         								<li><a href="#">Our Water</a></li>
         								<li><a href="#">Our Staff</a></li>
         								<li><a href="#">Company Events</a></li>
@@ -215,7 +227,7 @@
         				</nav>
         			</div>
 
-        			<div class="xlarge-3 columns">
+        			<div id="connectInfo" class="xlarge-3 columns">
         				<p class="semibold">Stay Connected</p>
         				<form action="">
         					<label for="newsletter_subscribe">Sign-Up for Our Newsletter</label>

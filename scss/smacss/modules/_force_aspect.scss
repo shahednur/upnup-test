@@ -1,13 +1,21 @@
 .forceAspect{
 	position: relative;
 	width:100%;
+}
+
+.forceAspect__img-wrap{
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	top: 0;
+	height: 100%;
 
 	img{
-		position: absolute;
-		top:0;
-		left:0;
-		width:100%;
-		height: auto;
+		display:block;
+		margin: 0 auto;
+		height: 100%;
+		width: auto;
+		max-width: none;
 	}
 }
 
@@ -17,4 +25,18 @@
 	left:0;
 	padding-bottom: 45%; //this can be over-ridden a the layout level for different effects?
 	width: 100%;
+}
+
+@include bp(xlarge){
+	.forceAspect__img-wrap{
+		width:100%;
+		left:0;
+
+		img{
+			display:inline;
+			max-width:100%;
+			width: 100%;
+			height:auto;
+		}
+	}
 }

@@ -1,0 +1,14 @@
+//generate some visibility classes
+@each $name, $size in $breakpoints{
+	@include bp-max($name){
+		.hide-for-#{$name}-down{
+			display:none;
+		}
+	}
+
+	@include bp($name){
+		.hide-for-#{$name}-up{
+			display:none;
+		}
+	}
+}

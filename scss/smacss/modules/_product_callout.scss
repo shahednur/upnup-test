@@ -1,5 +1,14 @@
 .productCallout{
 	position:relative;
+
+	@include bp(tablet){
+		&:hover{
+			.productCallout__overlay{
+				@include transition(opacity, 0.25s);
+				opacity: 1;
+			}
+		}
+	}
 }
 
 .productCallout__gradient{
@@ -26,11 +35,16 @@
 }
 
 .productCallout__overlay{
-	display: none;
-	postion: absolute;
+	position: absolute;
+	top:0;
+	left:0;
 	background: rgba(0, 0, 0, 0.5);
 	width:100%;
 	height: 100%;
+
+	@include bp(tablet){
+		opacity:0;
+	}
 }
 
 //shop now button (inside the overlay)
@@ -38,8 +52,8 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -25%;
-	transform: translatey(-50%);
+	transform: translateY(-50%) translateX(-50%);
+	z-index:3;
 }
 
 .productCallout__imageContainer{

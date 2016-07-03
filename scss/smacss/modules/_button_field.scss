@@ -1,6 +1,7 @@
 .buttonField{
 	margin-bottom: 1em;
 	position: relative;
+	height: 30px;
 
 	input{
 		height:30px;
@@ -10,6 +11,8 @@
 		border:none;
 		font-size: 0.8em;
 		border-radius:1px 0 0 1px;
+		position: absolute;
+		left:0;
 	}
 
 	button{

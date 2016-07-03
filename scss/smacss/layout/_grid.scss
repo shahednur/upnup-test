@@ -8,8 +8,10 @@
 	max-width: $grid-max-width;
 	margin: 0 auto;
 	box-sizing: border-box;
-
+	padding:0 $column-gutters-normal; //outer rows add some extra padding to page
+	
 	.row{
+		padding:0;
 		margin-left: -$column-gutters-normal;
 		margin-right: -$column-gutters-normal;
 	}
@@ -24,6 +26,10 @@
 	&:after{
 		clear: both;
 	}
+}
+
+.row--collapse{
+	padding:0;
 }
 
 .row--expand{
@@ -64,7 +70,7 @@
 	}
 }
 
-//larger sizes
+//larger column sizes
 @each $name, $size in $breakpoints{
 	@include bp($name){
 		@for $i from 1 through $grid-columns{

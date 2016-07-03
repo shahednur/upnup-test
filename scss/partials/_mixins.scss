@@ -61,6 +61,12 @@
 
 @mixin bp($point) {
   @if map-has-key($breakpoints, $point) {
-    @media #{map-get($breakpoints, $point)} { @content; }
+    @media screen and ( min-width: #{map-get($breakpoints, $point)}px){ @content; }
+  }
+}
+
+@mixin bp-max($point) {
+  @if map-has-key($breakpoints, $point) {
+    @media screen and ( max-width: #{map-get($breakpoints, $point)-1}px){ @content; }
   }
 }

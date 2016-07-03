@@ -1,11 +1,5 @@
 .footerNav__list{
-	& > a,
-	li{
-		display: block;
+	& > li{
 		margin-bottom: 0.25em;
-	}
-
-	li, a{
-		color: $light-grey;
 	}
 }

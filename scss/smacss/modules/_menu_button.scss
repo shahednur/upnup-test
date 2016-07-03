@@ -1,0 +1,52 @@
+.menuButton{
+	display:block;
+	background: none;
+	border: none;
+	position: relative;
+	width: 35px;
+	height: 50px;
+}
+
+.menuButton__icon{
+	display: block;
+	width: 100%;
+	background: $white;
+	height: 3px;
+	position: relative;
+	
+	
+	&:before,
+	&:after{
+		content : "";
+		display: block;
+		width: 100%;
+		background: $white;
+		height: 3px;
+		position: absolute;
+		bottom: 200%;
+		left: 0;
+	}
+
+	&:after{
+		bottom: -200%;
+	}
+}
+
+.is-active-menuButton{
+	
+	.menuButton__icon{
+		background: none;
+
+		&:before{
+			transform-origin:top left;
+			transform: rotate(45deg);
+			bottom:250%;
+		}
+
+		&:after{
+			transform-origin: bottom left;
+			transform: rotate(-45deg);
+			bottom: -250%;
+		}
+	}
+}

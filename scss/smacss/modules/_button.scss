@@ -56,23 +56,11 @@
 .button--white{
 	color: $white;
 	border-color: $white;
-
-	&:hover{
-		background: none;
-		color: $dark-blue;
-		border-color: $dark-blue;
-		@include transition(all, 0.25s);
-	}
 	
 	//this is actually provisioning for the arrow subclass
 	&:before,
 	&:after{
 		background: $white;
-	}
-
-	&:hover:before,
-	&:hover:after{
-		background: $dark-blue;
 	}
 }
 
