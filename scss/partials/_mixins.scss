@@ -1,10 +1,36 @@
+//mobile first media queries using a deined breakpoint
+@mixin bp($point) {
+  @if map-has-key($breakpoints, $point) {
+    @media screen and ( min-width: #{map-get($breakpoints, $point)}px){ @content; }
+  }
+}
+
+//max-widdth mmedia queries
+@mixin bp-max($point) {
+  @if map-has-key($breakpoints, $point) {
+    @media screen and ( max-width: #{map-get($breakpoints, $point)-1}px){ @content; }
+  }
+}
+
+//a range of 2 brakpoints, styling only in between them
+@mixin bp-range($low, $high) {
+  @if map-has-key($breakpoints, $low) and map-has-key($breakpoints, $high) {
+    @media screen and ( min-width: #{map-get($breakpoints, $low)}px) and ( max-width: #{map-get($breakpoints, $high)-1}px){ @content; }
+  }
+}
+
+
+//primary font stack
 @mixin primary-stack{
 	font-family: "OpenSans", Helvetica, sans-serif;
 }
 
+
+//easier way to throw in a transition
 @mixin transition($what, $time){
 	transition: $what $time;
 }
+
 
 //thanks sitepoint for this one!
 //https://www.sitepoint.com/building-linear-gradient-mixin-sass/
@@ -59,29 +85,11 @@
   @return 90deg - $value;
 }
 
-@mixin bp($point) {
-  @if map-has-key($breakpoints, $point) {
-    @media screen and ( min-width: #{map-get($breakpoints, $point)}px){ @content; }
-  }
-}
-
-@mixin bp-max($point) {
-  @if map-has-key($breakpoints, $point) {
-    @media screen and ( max-width: #{map-get($breakpoints, $point)-1}px){ @content; }
-  }
-}
-
-@mixin bp-range($low, $high) {
-  @if map-has-key($breakpoints, $low) and map-has-key($breakpoints, $high) {
-    @media screen and ( min-width: #{map-get($breakpoints, $low)}px) and ( max-width: #{map-get($breakpoints, $high)-1}px){ @content; }
-  }
-}
-
+//generate a @font-face rule
 @mixin font-face($name, $path, $weight, $style){
 	@font-face{
 		font-family: '#{$name}';
 	    src: url("#{$path}.eot?") format("eot"),
-	         url("#{$path}.woff2") format("woff2"),
 	         url("#{$path}.woff") format("woff"),
 	         url("#{$path}.ttf") format("truetype"),
 	         url("#{$path}.svg##{$name}") format("svg");

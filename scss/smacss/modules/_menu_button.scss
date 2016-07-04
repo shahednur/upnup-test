@@ -1,3 +1,7 @@
+/**
+ * Module to generate a hamburger menu button with pseudos
+ */
+
 .menuButton{
 	display:block;
 	background: none;
@@ -33,6 +37,7 @@
 	}
 }
 
+//the active state for the button
 .is-active-menuButton{
 	
 	.menuButton__icon{

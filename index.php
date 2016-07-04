@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Fontis Water</title>
-        <meta name="description" content="">
+        <meta name="description" content="A test ebpage built for Up&amp;Up">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -19,6 +19,7 @@
         	<section id="banner">
 
         		<section id="allNav">
+
 	        		<div id="topBar" class="hide-for-xlarge-down">
 						<div class="row">
 							<div class="xlarge-15 columns">
@@ -38,7 +39,7 @@
 			        				<svg class="icon-fontis" width="100" height="150"><use xlink:href="#fontis-logo"></use></svg>
 			        			</div>
 			        			<nav id="primaryNav" class="hide-for-xlarge-down">
-			        				<ul id="primaryNav__list">
+			        				<ul id="primaryNav__list" class="inline-list">
 			        					<li><a href="#">Services</a></li>
 			        					<li><a href="#">About</a></li>
 			        					<li><a href="#">Shop</a></li>
@@ -53,9 +54,10 @@
 			        			</button>
 			        		</header>
 			        	</div>
-
 	        		</div>
+
 	        	</section>
+
 
 	        	<section id="heroText">
 	        		<div class="row">
@@ -67,16 +69,21 @@
         			</div>
         		</section> 
 
+
         		<div id="bannerImgWrap" class="forceAspect">
         			<div class="forceAspect__dummy"></div>
         			<div class="forceAspect__img-wrap">
 						<img src="img/banner.jpg" alt="sunrise over the mountains" id="bannerImg"/>
 					</div>
 				</div>
+
 				
-				<div class="overlay"></div>
-        	</section>
+				<div class="overlay"></div> <!-- Overlay to increase legibility/ contrast -->
+
+        	</section> <!-- end banner -->
 				
+
+
 			<section id="callout" class="hide-for-tablet-down">
         		<div class="row">
         			<div class="xlarge-9 tablet-7 columns">
@@ -87,13 +94,15 @@
         		</div>
         	</section>
 			
+
 			<div id="heroContainer">
 				<div class="row">
 					<div class="large-16 columns">
-						<img id="hero" src="img/watercooler.png">
+						<img id="hero" src="img/watercooler.png" alt="A fontis water cooler">
 					</div>
 				</div>
 			</div>
+
 
         	<section id="products">
 				<div class="row row--expand row--collapse">
@@ -103,7 +112,7 @@
 								<div class="forceAspect">
 									<div class="forceAspect__dummy"></div>
 									<div class="forceAspect__img-wrap forceAspect__img-wrap--snap">
-										<img src="http://placehold.it/700x500" alt="">	
+										<img src="img/bottled.jpg" alt="fontis bottled water">	
 									</div>
 								</div>
 							</div>
@@ -123,7 +132,7 @@
 								<div class="forceAspect">
 									<div class="forceAspect__dummy"></div>
 									<div class="forceAspect__img-wrap forceAspect__img-wrap--snap">
-										<img src="http://placehold.it/700x500" alt="">	
+										<img src="img/coffee.jpg" alt="a hot cup of coffee">	
 									</div>
 								</div>
 							</div>
@@ -143,7 +152,7 @@
 								<div class="forceAspect">
 									<div class="forceAspect__dummy"></div>
 									<div class="forceAspect__img-wrap forceAspect__img-wrap--snap">
-										<img src="http://placehold.it/700x500" alt="">	
+										<img src="img/filtered.jpg" alt="a water filtration machine">	
 									</div>
 								</div>
 							</div>
@@ -159,6 +168,7 @@
         		</div>
         	</section>
 
+
         	<section id="secondary-callout">
         		<div class="row">
         			<div class="xlarge-7 tablet-9 small-12 columns columns--centered">
@@ -168,6 +178,7 @@
         			</div>
         		</div>
         	</section>
+
 
         	<footer id="primaryFooter">
         		<div class="row logoContainer">
@@ -187,7 +198,7 @@
         					Marietta, GA 30066
         				</p>
 
-        				<p class="phone large-blue-text">678-494-1981</p>
+        				<p class="phone"><a class="large-blue-text" href="tel:6784941981">678-494-1981</a></p>
         				<button class="button button--white button--arrow button--invisible button--nohov hide-for-xlarge-down">Donation Request<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></button>
         			</div>
 
@@ -269,7 +280,9 @@
         			</div>
         		</div>
         	</footer>
+
         </div> <!-- end #page -->
+
 
         <div id="mobileMenuContainer">
 			<nav id="mobileMenu">
@@ -283,11 +296,11 @@
 				<ul class="stackedList stackedList--wrapped">
 					<li><a href="">Login</a></li>
 					<li><a href="">Request a Quote</a></li>
-					<li><span class="semibold">678-494-1981</span></li>
+					<li><a href="tel:6784941981" class="semibold">678-494-1981</span></li>
 				</ul>
 			</nav>
 		</div>
 		
-		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="build/js/main.min.js"></script>
     </body>
 </html>

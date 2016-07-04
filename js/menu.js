@@ -49,8 +49,13 @@
 			}
 		};
 
+	//run once document is ready
 	ready(function(){
 
+		/**
+		 * Menu manager object
+		 * Runs the menu
+		 */
 		var menuManager = function(){
 			var self = this;
 			
@@ -74,11 +79,13 @@
 				this.refs.menu = menu;
 			};
 
+			//listen for events
 			this.listen = function(){
 				this.refs.button.addEventListener("click", this.handleClick);
 				window.addEventListener("resize", throttle(self.hideMenu, 500, self));
 			};
 
+			//click on the menu icon
 			this.handleClick = function(e){
 				if(self.isActive){
 					self.hideMenu();

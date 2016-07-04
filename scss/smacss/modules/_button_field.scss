@@ -1,3 +1,7 @@
+/**
+ * Input field that has abutton tacked on the right side
+ * the svg icon could be interchanged in the markup
+ */
 .buttonField{
 	margin-bottom: 1em;
 	position: relative;
@@ -33,6 +37,8 @@
 
 		svg{
 			fill: $white;
+			width: 15px;
+			height: 15px;
 		}
 	}
 }

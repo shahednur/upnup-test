@@ -1,3 +1,8 @@
+/**
+ * Simple stacked list w/ border in-between items
+ * Used in the mobile nav
+ */
+
 .stackedList{
 	li a,
 	li span{
@@ -11,11 +16,11 @@
 		}
 	}
 	
-	font-weight: 400;
-	padding: 0;
 	color: $white;
+	font-weight: 400;
 	list-style:none;
 	margin-bottom:0;
+	padding: 0;
 	text-align: center;
 	
 	&>li{

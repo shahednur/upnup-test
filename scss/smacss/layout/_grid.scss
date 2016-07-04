@@ -1,9 +1,8 @@
 /**
- * Super simple grid based on some of the earlier forms of foundation
+ * Super simple grid based on some of the earlier forms of foundation (v 4-5 era)
  * Uses the breakpoints porvided in the variables file
  * operates mobile first
  */
-
 .row{
 	max-width: $grid-max-width;
 	margin: 0 auto;
@@ -28,7 +27,7 @@
 	}
 	
 	//this will collapse the page padding under the smallest breakpoint
-	//buys a little more space
+	//buys a little more space for mobile layouts
 	@include bp-max(tablet){
 		padding:0;
 	}
@@ -63,11 +62,16 @@
 	padding:0 $column-gutters-skinny;
 }
 
+//right now a column that is centered must always be centered
+//there is likely a way to automate breakpoint-specific centering
 .column--centered,
 .columns--centered{
 	float:none;
 	margin:0 auto;
 }
+
+
+// -- COLUMN CLASSES -- //
 
 //mobile sizes (small)
 @for $i from 1 through $grid-columns{	

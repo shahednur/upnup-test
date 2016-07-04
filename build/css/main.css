@@ -1,24 +1,24 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("../../fonts/OpenSans-Bold-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Bold-webfont.woff2") format("woff2"), url("../../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Bold-webfont.svg#OpenSans") format("svg");
+  src: url("../../fonts/OpenSans-Bold-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Bold-webfont.svg#OpenSans") format("svg");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("../../fonts/OpenSans-Semibold-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Semibold-webfont.woff2") format("woff2"), url("../../fonts/OpenSans-Semibold-webfont.woff") format("woff"), url("../../fonts/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Semibold-webfont.svg#OpenSans") format("svg");
+  src: url("../../fonts/OpenSans-Semibold-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Semibold-webfont.woff") format("woff"), url("../../fonts/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Semibold-webfont.svg#OpenSans") format("svg");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("../../fonts/OpenSans-Regular-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Regular-webfont.woff2") format("woff2"), url("../../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Regular-webfont.svg#OpenSans") format("svg");
+  src: url("../../fonts/OpenSans-Regular-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Regular-webfont.svg#OpenSans") format("svg");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("../../fonts/OpenSans-Light-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Light-webfont.woff2") format("woff2"), url("../../fonts/OpenSans-Light-webfont.woff") format("woff"), url("../../fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Light-webfont.svg#OpenSans") format("svg");
+  src: url("../../fonts/OpenSans-Light-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Light-webfont.woff") format("woff"), url("../../fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Light-webfont.svg#OpenSans") format("svg");
   font-weight: 300;
   font-style: normal; }
 
@@ -418,6 +418,9 @@ h1 {
   font-size: 2.25em;
   font-weight: 300;
   line-height: 1.2; }
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 3.75em; } }
 
 h2 {
   font-size: 1.5em; }
@@ -483,15 +486,8 @@ a {
   font-weight: 600;
   color: #8FAFBF; }
 
-@media screen and (min-width: 1024px) {
-  h1 {
-    font-size: 3.75em; } }
-
 html, body {
-  min-height: 100%; }
-
-body {
-  background: #FFF;
+  min-height: 100%;
   position: relative; }
 
 div,
@@ -529,7 +525,7 @@ label {
   display: inline-block; }
 
 /**
- * Super simple grid based on some of the earlier forms of foundation
+ * Super simple grid based on some of the earlier forms of foundation (v 4-5 era)
  * Uses the breakpoints porvided in the variables file
  * operates mobile first
  */
@@ -719,44 +715,34 @@ label {
   .huge-15 {
     width: 100%; } }
 
+#topBar {
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  padding: 0.5em 0;
+  width: 100%; }
+
 #primaryHeader {
   padding-top: 1.25em; }
-  #primaryHeader .logo {
-    max-width: 125px; }
-
-.icon-fontis {
-  fill: #FFFFFF;
-  width: 125px;
-  height: 50px; }
-
-.icon-georgia-grown {
-  fill: #EBEBEB; }
 
 #allNav {
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000; }
 
-#topBar {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  color: #FFF;
-  padding: 0.5em 0; }
-
 #primaryNav {
-  float: right;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  float: right; }
 
 #primaryNav__list {
-  vertical-align: middle;
   display: inline-block;
-  padding: 0;
   font-weight: 600;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding: 0;
+  vertical-align: middle; }
   #primaryNav__list li {
-    display: inline-block;
+    padding: 0;
     text-transform: uppercase; }
     #primaryNav__list li:last-of-type {
       border-right: 1px solid #FFFFFF; }
@@ -766,14 +752,13 @@ label {
       #primaryNav__list li a:last-of-type {
         padding-right: 1.5em; }
       #primaryNav__list li a:hover {
-        color: inherit;
-        text-decoration: underline; }
+        color: #162F4C; }
 
 #primaryNav__logo {
-  vertical-align: middle;
   display: inline-block;
-  padding: 0 0.75em;
   padding-right: 0;
+  padding: 0 0.75em;
+  vertical-align: middle;
   width: calc(50px + 0.75em); }
 
 #banner {
@@ -786,22 +771,25 @@ label {
     padding-bottom: 645px; }
   @media screen and (min-width: 1440px) {
     #bannerImgWrap .forceAspect__img-wrap {
-      width: 100%;
-      left: 0; }
+      left: 0;
+      width: 100%; }
       #bannerImgWrap .forceAspect__img-wrap img {
         display: inline;
+        height: auto;
         max-width: 100%;
-        width: 100%;
-        height: auto; } }
+        position: static;
+        transform: translateY(0);
+        width: 100%; } }
 
 #heroText {
-  position: absolute;
   bottom: 0;
+  padding-bottom: 2em;
+  position: absolute;
   width: 100%;
-  z-index: 1;
-  padding-bottom: 2em; }
+  z-index: 1; }
   #heroText .heroText__headline {
-    color: #FFF; }
+    color: #FFF;
+    margin-bottom: 1rem; }
   #heroText .heroText__copy {
     color: #FFF;
     font-size: 1.5em;
@@ -812,21 +800,21 @@ label {
       margin-bottom: 1em; } }
   @media screen and (max-width: 766px) {
     #heroText {
-      padding-top: 3em;
-      text-align: center;
       background: transparent;
       background: -webkit-linear-gradient(-90deg, transparent, rgba(0, 0, 0, 0.75));
-      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.75)); }
+      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.75));
+      padding-top: 3em;
+      text-align: center; }
       #heroText .heroText__headline {
         font-size: 1.3125em;
         margin-bottom: 1em;
         font-weight: 600; } }
 
 #hero {
-  position: absolute;
   bottom: 0;
-  right: 0.875em;
-  max-width: 335px; }
+  max-width: 335px;
+  position: absolute;
+  right: 0.875em; }
   @media screen and (max-width: 766px) {
     #hero {
       max-width: 275px;
@@ -842,14 +830,6 @@ label {
     #secondary-callout .callout__headline {
       margin-bottom: 1.25rem; } }
 
-/*
-//This seems silly, why change the spacing in this one place?
-//the comps show a bit more spacing in the first callout section...
-#callout{
-	.callout__headline{margin-bottom: 1rem;}
-	.callout__copy{margin-bottom: 1.5rem;}
-}
-*/
 #secondary-callout {
   text-align: center; }
 
@@ -866,14 +846,11 @@ label {
 
 #primaryFooter {
   background: #312D2E;
-  padding: 3em 0;
   color: #FFF;
+  padding: 3em 0;
   text-align: center; }
   #primaryFooter .logoContainer {
-    margin-bottom: 1.25em; }
-  #primaryFooter .logo {
-    display: inline-block;
-    max-width: 125px; }
+    margin-bottom: 1.5em; }
   @media screen and (min-width: 1024px) {
     #primaryFooter {
       text-align: left; } }
@@ -885,10 +862,10 @@ label {
         display: inline-block;
         padding: 1em; }
       #primaryFooter .nested-list > li {
+        border-top: 1px solid #FFFFFF;
         display: block;
         float: none;
         margin: 0 auto;
-        border-top: 1px solid #FFFFFF;
         max-width: 150px; }
         #primaryFooter .nested-list > li:last-of-type {
           border-bottom: 1px solid #FFFFFF; }
@@ -903,25 +880,25 @@ label {
 
 @media screen and (max-width: 1023px) {
   #connectInfo {
-    max-width: 225px;
-    float: none;
     clear: both;
-    margin: 0 auto; } }
+    float: none;
+    margin: 0 auto;
+    max-width: 225px; } }
 
 #connectInfo .buttonField {
   margin-bottom: 2rem; }
 
 #mobileMenuContainer {
+  transition: all 0.25s;
   background: #8FAFBF;
+  height: 100%;
+  left: 100%;
+  opacity: 0;
+  overflow-y: scroll;
   position: fixed;
   top: 0;
-  left: 100%;
   width: 100%;
-  height: 100%;
-  z-index: 100;
-  overflow-y: scroll;
-  opacity: 0;
-  transition: all 0.25s; }
+  z-index: 100; }
 
 #mobileMenu {
   max-width: 200px;
@@ -930,14 +907,10 @@ label {
   color: #FFFFFF; }
 
 #mobileMenuContainer.is-active-menu {
-  left: 0;
+  transition: all 0.25s;
   display: block;
-  opacity: 1;
-  transition: all 0.25s; }
-
-.no-bullets {
-  list-style-type: none;
-  padding-left: 0; }
+  left: 0;
+  opacity: 1; }
 
 .right {
   float: right; }
@@ -954,6 +927,10 @@ label {
 
 .last {
   margin-bottom: 0; }
+
+.no-bullets {
+  list-style-type: none;
+  padding-left: 0; }
 
 .button {
   color: #162F4C;
@@ -1007,6 +984,9 @@ label {
 .button--nohov:hover {
   color: inherit; }
 
+/**
+ * Module to generate a hamburger menu button with pseudos
+ */
 .menuButton {
   display: block;
   background: none;
@@ -1047,34 +1027,45 @@ label {
     transform: rotate(-45deg);
     transition: transform 0.25s; }
 
+/**
+ * A fun module to keep images snapped into the boundaries of a container
+ * Requires a bit of extra markup, but makes scaling images less head-achey
+ */
 .forceAspect {
   position: relative;
   width: 100%; }
 
 .forceAspect__img-wrap {
-  width: 300%;
-  position: absolute;
+  height: 100%;
   left: -100%;
+  position: absolute;
   top: 0;
-  height: 100%; }
+  width: 300%; }
   .forceAspect__img-wrap img {
     display: block;
-    margin: 0 auto;
     height: 100%;
-    width: auto;
-    max-width: none; }
+    margin: 0 auto;
+    max-width: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto; }
 
 .forceAspect__img-wrap--snap img {
   height: auto;
   width: 34%; }
 
 .forceAspect__dummy {
-  position: relative;
-  top: 0;
   left: 0;
   padding-bottom: 50%;
+  position: relative;
+  top: 0;
   width: 100%; }
 
+/**
+ * Module used to create the product callout sections
+ * Overlay/ button componets could potentially be removed in markup and still remain functional
+ */
 .productCallout {
   position: relative; }
   @media screen and (min-width: 767px) {
@@ -1083,38 +1074,38 @@ label {
       opacity: 1; } }
 
 .productCallout__gradient {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50%;
   background: transparent;
-  background: -webkit-linear-gradient(-90deg, transparent, rgba(0, 0, 0, 0.25));
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.25));
+  background: -webkit-linear-gradient(-90deg, transparent, rgba(0, 0, 0, 0.6));
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.6));
+  bottom: 0;
+  height: 50%;
+  position: absolute;
+  width: 100%;
   z-index: 1; }
 
 .productCallout__title {
-  position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.5em 0;
-  text-align: center;
-  z-index: 2;
-  margin-bottom: 0;
   color: #FFFFFF;
+  font-size: 1.25em;
   font-weight: 600;
-  font-size: 1.25em; }
+  left: 0;
+  margin-bottom: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2; }
   @media screen and (max-width: 1023px) {
     .productCallout__title {
       font-size: 1.125em; } }
 
 .productCallout__overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
   @media screen and (min-width: 767px) {
     .productCallout__overlay {
       opacity: 0; } }
@@ -1127,12 +1118,15 @@ label {
   z-index: 3; }
 
 .productCallout__imageContainer {
-  width: 100%;
+  max-height: 350px;
   overflow: hidden;
-  max-height: 350px; }
+  width: 100%; }
   .productCallout__imageContainer .forceAspect__dummy {
     padding-bottom: 50%; }
 
+/**
+ * Make a social links list that justifies its items to its full width
+ */
 .socialLinks {
   padding-left: 0;
   list-style-type: none;
@@ -1151,6 +1145,10 @@ label {
     fill: #EBEBEB;
     opacity: 0.2; }
 
+/**
+ * Input field that has abutton tacked on the right side
+ * the svg icon could be interchanged in the markup
+ */
 .buttonField {
   margin-bottom: 1em;
   position: relative;
@@ -1179,7 +1177,9 @@ label {
       background: #162F4C;
       transition: all 0.25s; }
     .buttonField button svg {
-      fill: #FFFFFF; }
+      fill: #FFFFFF;
+      width: 15px;
+      height: 15px; }
 
 .inline-list {
   list-style-type: none;
@@ -1203,7 +1203,9 @@ label {
 .inline-list--no-mb {
   margin-bottom: 0; }
 
+.nested-list > li > a,
 .nested-list li {
+  display: block;
   margin-bottom: 0.25em; }
 
 .nested-list > li > a {
@@ -1215,12 +1217,16 @@ label {
   .nested-list a:hover {
     color: #8FAFBF; }
 
+/**
+ * Simple stacked list w/ border in-between items
+ * Used in the mobile nav
+ */
 .stackedList {
-  font-weight: 400;
-  padding: 0;
   color: #FFFFFF;
+  font-weight: 400;
   list-style: none;
   margin-bottom: 0;
+  padding: 0;
   text-align: center; }
   .stackedList li a,
   .stackedList li span {
@@ -1248,6 +1254,9 @@ label {
     .stackedList--wrapped li span:hover {
       color: #000; }
 
+/**
+ * Really simple transparent overlay
+ */
 .overlay {
   position: absolute;
   top: 0;
@@ -1255,6 +1264,19 @@ label {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3); }
+
+[class^="icon-"] {
+  fill: #FFFFFF; }
+
+.icon-fontis {
+  width: 125px;
+  height: 50px; }
+
+.icon-georgia-grown {
+  fill: #EBEBEB; }
+
+.is-locked {
+  overflow: hidden; }
 
 @media screen and (max-width: 766px) {
   .hide-for-tablet-down {
@@ -1319,6 +1341,3 @@ label {
 @media screen and (min-width: 1024px) and (max-width: 1599px) {
   .hide-for-xlarge-only {
     display: none; } }
-
-.is-locked {
-  overflow: hidden; }

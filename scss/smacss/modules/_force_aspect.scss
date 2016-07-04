@@ -1,35 +1,43 @@
+/**
+ * A fun module to keep images snapped into the boundaries of a container
+ * Requires a bit of extra markup, but makes scaling images less head-achey
+ */
+
 .forceAspect{
 	position: relative;
 	width:100%;
 }
 
 .forceAspect__img-wrap{
-	width: 300%;
-	position: absolute;
-	left: -100%;
-	top: 0;
 	height: 100%;
-
+	left: -100%;
+	position: absolute;
+	top: 0;
+	width: 300%;
+	
 	img{
 		display:block;
-		margin: 0 auto;
 		height: 100%;
-		width: auto;
+		margin: 0 auto;
 		max-width: none;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%); //images roughly centered in their container
+		width: auto;
 	}
 }
 
 .forceAspect__img-wrap--snap{
 	img{
 		height: auto;
-		width: 34%;
+		width: 34%; //(one thirs of the 300%)
 	}
 }
 
 .forceAspect__dummy{
+	left:0;
+	padding-bottom: 50%; //this can be over-ridden a the layout level for different effects
 	position: relative;
 	top:0;
-	left:0;
-	padding-bottom: 50%; //this can be over-ridden a the layout level for different effects?
 	width: 100%;
 }

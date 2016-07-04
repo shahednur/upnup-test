@@ -20,6 +20,8 @@
 @import "smacss/modules/nested_list";
 @import "smacss/modules/stacked_list";
 @import "smacss/modules/overlay";
+@import "smacss/modules/icons";
 
-@import "smacss/states/visibility";
 @import "smacss/states/states";
+
+@import "smacss/layout/visibility"; //visiblity is at the end so it can override other classes

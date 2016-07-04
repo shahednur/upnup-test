@@ -2,7 +2,7 @@ body{
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 	font-size: 16px; //definitevely set the EM base size
-	font-weight: 300;
+	font-weight: 300; //default weight
 	//stop some nasty blurry fonts that occur in firefox and OSX
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -23,7 +23,13 @@ h6{
 	color: $dark-grey;
 }
 
-h1{font-size: 2.25em; font-weight: 300; line-height: 1.2;}
+h1{
+	font-size: 2.25em; font-weight: 300; line-height: 1.2;
+	
+	@include bp(xlarge){
+		font-size: 3.75em;
+	}	
+}
 h2{font-size: 1.5em;}
 h3{font-size: 1.25em;}
 h4{font-size: 1em;}
@@ -74,14 +80,4 @@ a{
 	margin-bottom: 0.5em;
 	font-weight: 600;
 	color: $light-blue;
-}
-
-
-
-
-
-//-- Media queries -------------------------------//
-
-@include bp(xlarge){
-	h1{ font-size: 3.75em; }
 }

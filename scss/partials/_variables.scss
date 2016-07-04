@@ -6,11 +6,13 @@ $breakpoints : (
 	huge: 1600
 );
 
+
 //Grid vars
-$grid-max-width: 1052px;
-$grid-columns: 15;
+$grid-max-width: 1052px; //this is a bit wider than the xlarge breakpoint to allow for extra gutter space
+$grid-columns: 15; //wierd, yeah.
 $column-gutters-normal: 0.875em;
 $column-gutters-skinny: 0.25em;
+
 
 //colors
 $white: #FFFFFF;

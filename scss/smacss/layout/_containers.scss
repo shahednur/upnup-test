@@ -1,52 +1,38 @@
+#topBar{
+	background: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	padding: 0.5em 0;
+	width: 100%;
+}
+
 #primaryHeader{
 	padding-top:1.25em;
-
-	.logo{
-		max-width: 125px;
-	}
-}
-
-
-//TODO: move these somewhere else...
-.icon-fontis{
-	fill: $white;
-	width: 125px;
-	height: 50px;
-}
-
-.icon-georgia-grown{
-	fill: $light-grey;
 }
 
 #allNav{
+	left: 0;
 	position: absolute;
 	top: 0;
-	left: 0;
 	width: 100%;
 	z-index: 1000;
 }
 
-#topBar{
-	width: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	color: #FFF;
-	padding: 0.5em 0;
-}
 
 #primaryNav{
-	float: right;
 	color: $white;
+	float: right;
 }
 
 #primaryNav__list{
-	vertical-align: middle;
 	display:inline-block;
-	padding: 0;
 	font-weight: 600;
 	margin-bottom:0;
-
+	padding: 0;
+	vertical-align: middle;
+	
+	//modify the inline list module that drives the main nav
 	li{
-		display: inline-block;
+		padding: 0;
 		text-transform: uppercase;
 
 		&:last-of-type{
@@ -62,18 +48,17 @@
 			}
 
 			&:hover{
-				color: inherit;
-				text-decoration: underline;
+				color: $dark-blue;
 			}
 		}
 	}
 }
 
 #primaryNav__logo{
-	vertical-align: middle;
 	display:inline-block;
-	padding: 0 0.75em;
 	padding-right: 0;
+	padding: 0 0.75em;
+	vertical-align: middle;
 	width: calc(50px + 0.75em);
 }
 
@@ -93,28 +78,32 @@
 	//this is a little proprietary hippe voo-doo to get the banner image to scale up past its max width
 	@media screen and (min-width: 1440px){
 		.forceAspect__img-wrap{
-			width:100%;
 			left:0;
+			width:100%;
 
 			img{
 				display:inline;
-				max-width:100%;
-				width: 100%;
 				height:auto;
+				max-width:100%;
+				position: static;
+				transform: translateY(0);
+				width: 100%;
 			}
 		}
 	}
 }
 
+//the hero text has some very niggling style changes as the layout sizes down. Ew. 
 #heroText{
-	position: absolute;
 	bottom:0;
+	padding-bottom: 2em;
+	position: absolute;
 	width: 100%;
 	z-index:1;
-	padding-bottom: 2em;
 	
 	.heroText__headline{
 		color: #FFF;
+		margin-bottom: 1rem;
 	}
 
 	.heroText__copy{
@@ -131,9 +120,9 @@
 	}
 
 	@include bp-max(tablet){
+		@include linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75));
 		padding-top:3em;
 		text-align: center;
-		@include linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75));
 
 		.heroText__headline{
 			font-size: 1.3125em;
@@ -143,11 +132,12 @@
 	}
 }
 
+//big hero of the water cooler
 #hero{
-	position:absolute;
 	bottom:0;
-	right: $column-gutters-normal;
 	max-width: 335px;
+	position:absolute;
+	right: $column-gutters-normal;
 
 	@include bp-max(tablet){
 		max-width: 275px;
@@ -156,7 +146,7 @@
 	}
 }
 
-
+//two light-grey callout boxes
 #callout,
 #secondary-callout{
 	background: $light-grey;
@@ -169,19 +159,11 @@
 	}
 }
 
-/*
-//This seems silly, why change the spacing in this one place?
-//the comps show a bit more spacing in the first callout section...
-#callout{
-	.callout__headline{margin-bottom: 1rem;}
-	.callout__copy{margin-bottom: 1.5rem;}
-}
-*/
-
 #secondary-callout{
 	text-align: center;
 }
 
+//product blocks
 #products{
 	background: $white;
 	padding:0.5em 0.25em;
@@ -195,7 +177,8 @@
 				margin-bottom: 0;
 			}
 		}
-
+		
+		//increase aspect ratio of these blocks on smaller screens
 		.forceAspect__dummy{
 			padding-bottom: 65%;
 		}
@@ -204,23 +187,19 @@
 
 #primaryFooter{
 	background: $dark-grey;
-	padding:3em 0;
 	color: #FFF;
+	padding:3em 0;
 	text-align: center;
 
 	.logoContainer{
-		margin-bottom:1.25em;
-	}
-
-	.logo{
-		display:inline-block;
-		max-width: 125px;
+		margin-bottom:1.5em;
 	}
 
 	@include bp(xlarge){
 		text-align: left;
 	}
-
+	
+	//the nested list in the footer can get re-used as the stacked nav at the smallest size
 	@include bp-max(tablet){
 		.nested-list{
 			text-align: center;
@@ -232,10 +211,10 @@
 			}
 			
 			& > li{
+				border-top: 1px solid $white;
 				display:block;
 				float:none;
 				margin: 0 auto;
-				border-top: 1px solid $white;
 				max-width: 150px;
 
 				&:last-of-type{
@@ -254,17 +233,18 @@
 
 }
 
+//holds the email form and social icons
 #connectInfo{
 	label{
 		color: $light-grey;
-		white-space: nowrap;
+		white-space: nowrap; //heh heh no line break!
 	}
 
 	@include bp-max(xlarge){
-		max-width: 225px;
-		float:none;
 		clear: both;
+		float:none;
 		margin:0 auto;
+		max-width: 225px;
 	}
 	
 	.buttonField{
@@ -274,16 +254,16 @@
 
 
 #mobileMenuContainer{
+	@include transition(all, 0.25s);
 	background: $light-blue;
+	height: 100%;
+	left: 100%;
+	opacity:0;
+	overflow-y: scroll;
 	position: fixed;
 	top: 0;
-	left: 100%;
 	width: 100%;
-	height: 100%;
 	z-index: 100;
-	overflow-y: scroll;
-	opacity:0;
-	@include transition(all, 0.25s);
 }
 
 #mobileMenu{
@@ -293,9 +273,10 @@
 	color: $white;
 }
 
+//state for the mobile menu when it is open
 #mobileMenuContainer.is-active-menu{
-	left: 0;
-	display: block;
-	opacity: 1;
 	@include transition(all, 0.25s);
+	display: block;
+	left: 0;
+	opacity: 1;
 }
