@@ -1,4 +1,27 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700);
+@font-face {
+  font-family: "OpenSans";
+  src: url("../../fonts/OpenSans-Bold-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Bold-webfont.woff2") format("woff2"), url("../../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Bold-webfont.svg#OpenSans") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../../fonts/OpenSans-Semibold-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Semibold-webfont.woff2") format("woff2"), url("../../fonts/OpenSans-Semibold-webfont.woff") format("woff"), url("../../fonts/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Semibold-webfont.svg#OpenSans") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../../fonts/OpenSans-Regular-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Regular-webfont.woff2") format("woff2"), url("../../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Regular-webfont.svg#OpenSans") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../../fonts/OpenSans-Light-webfont.eot?") format("eot"), url("../../fonts/OpenSans-Light-webfont.woff2") format("woff2"), url("../../fonts/OpenSans-Light-webfont.woff") format("woff"), url("../../fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../../fonts/OpenSans-Light-webfont.svg#OpenSans") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -376,7 +399,7 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Open Sans', Helvetica, sans-serif; }
+  font-family: "OpenSans", Helvetica, sans-serif; }
 
 h1,
 h2,
@@ -388,11 +411,13 @@ h6 {
   -webkit-margin-after: 0;
   margin-bottom: 0.5em;
   font-weight: 600;
-  line-height: 1.1; }
+  line-height: 1.3;
+  color: #312D2E; }
 
 h1 {
   font-size: 2.25em;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 1.2; }
 
 h2 {
   font-size: 1.5em; }
@@ -409,6 +434,9 @@ h5 {
 h6 {
   font-size: 1em; }
 
+p {
+  color: #312D2E; }
+
 ul,
 p,
 li,
@@ -416,10 +444,6 @@ label {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   line-height: 1.6; }
-
-ul,
-p {
-  margin-bottom: 1em; }
 
 a {
   text-decoration: none;
@@ -446,6 +470,9 @@ a {
 
 .xlarge-text {
   font-size: 1.5em; }
+
+.white-text {
+  color: #FFFFFF; }
 
 .caps {
   text-transform: uppercase; }
@@ -487,6 +514,11 @@ input {
 img {
   max-width: 100%; }
 
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 1em; }
+
 input[type="text"],
 input[type="search"] {
   color: #312D2E;
@@ -515,6 +547,9 @@ label {
     display: table; }
   .row:after {
     clear: both; }
+  @media screen and (max-width: 766px) {
+    .row {
+      padding: 0; } }
 
 .row--collapse {
   padding: 0; }
@@ -739,7 +774,7 @@ label {
   display: inline-block;
   padding: 0 0.75em;
   padding-right: 0;
-  width: 50px; }
+  width: calc(50px + 0.75em); }
 
 #banner {
   position: relative;
@@ -764,8 +799,17 @@ label {
   bottom: 0;
   width: 100%;
   z-index: 1;
-  padding-bottom: 2em;
-  color: #FFF; }
+  padding-bottom: 2em; }
+  #heroText .heroText__headline {
+    color: #FFF; }
+  #heroText .heroText__copy {
+    color: #FFF;
+    font-size: 1.5em;
+    margin-bottom: 1.5em; }
+  @media screen and (max-width: 1023px) {
+    #heroText .heroText__copy {
+      font-size: 1.25em;
+      margin-bottom: 1em; } }
   @media screen and (max-width: 766px) {
     #heroText {
       padding-top: 3em;
@@ -773,7 +817,7 @@ label {
       background: transparent;
       background: -webkit-linear-gradient(-90deg, transparent, rgba(0, 0, 0, 0.75));
       background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.75)); }
-      #heroText h1 {
+      #heroText .heroText__headline {
         font-size: 1.3125em;
         margin-bottom: 1em;
         font-weight: 600; } }
@@ -782,7 +826,7 @@ label {
   position: absolute;
   bottom: 0;
   right: 0.875em;
-  max-width: 325px; }
+  max-width: 335px; }
   @media screen and (max-width: 766px) {
     #hero {
       max-width: 275px;
@@ -792,8 +836,20 @@ label {
 #callout,
 #secondary-callout {
   background: #EBEBEB;
-  padding: 2.5em 0; }
+  padding: 2.25em 0; }
+  @media screen and (max-width: 1023px) {
+    #callout .callout__headline,
+    #secondary-callout .callout__headline {
+      margin-bottom: 1.25rem; } }
 
+/*
+//This seems silly, why change the spacing in this one place?
+//the comps show a bit more spacing in the first callout section...
+#callout{
+	.callout__headline{margin-bottom: 1rem;}
+	.callout__copy{margin-bottom: 1.5rem;}
+}
+*/
 #secondary-callout {
   text-align: center; }
 
@@ -841,15 +897,19 @@ label {
   #primaryFooter .footerNav__list--tablet {
     padding: 1em 0; }
 
+#connectInfo label {
+  color: #EBEBEB;
+  white-space: nowrap; }
+
 @media screen and (max-width: 1023px) {
   #connectInfo {
-    max-width: 250px;
+    max-width: 225px;
     float: none;
     clear: both;
     margin: 0 auto; } }
 
 #connectInfo .buttonField {
-  margin-bottom: 2em; }
+  margin-bottom: 2rem; }
 
 #mobileMenuContainer {
   background: #8FAFBF;
@@ -898,11 +958,13 @@ label {
 .button {
   color: #162F4C;
   display: inline-block;
+  font-size: 1.125em;
   font-weight: 600;
   padding: 0.5em 0.75em;
   border-radius: 2px;
   border: 1px solid #162F4C;
-  background: none; }
+  background: none;
+  white-space: nowrap; }
   .button:hover {
     cursor: pointer;
     background: #162F4C;
@@ -912,7 +974,8 @@ label {
 .button--invisible {
   padding-left: 0;
   padding-right: 0;
-  border-width: 0; }
+  border-width: 0;
+  font-size: 1rem; }
   .button--invisible:hover {
     background: none; }
 
@@ -937,6 +1000,10 @@ label {
   color: #FFFFFF;
   border-color: #FFFFFF; }
 
+.button--grey {
+  color: #312D2E;
+  border-color: #312D2E; }
+
 .button--nohov:hover {
   color: inherit; }
 
@@ -945,8 +1012,8 @@ label {
   background: none;
   border: none;
   position: relative;
-  width: 35px;
-  height: 50px; }
+  width: 33px;
+  height: 30px; }
 
 .menuButton__icon {
   display: block;
@@ -961,23 +1028,23 @@ label {
     background: #FFFFFF;
     height: 3px;
     position: absolute;
-    bottom: 200%;
+    bottom: 7px;
     left: 0;
     transition: transform 0.25s; }
   .menuButton__icon:after {
-    bottom: -200%; }
+    bottom: -7px; }
 
 .is-active-menuButton .menuButton__icon {
   background: none; }
   .is-active-menuButton .menuButton__icon:before {
-    transform-origin: top left;
+    bottom: 0;
+    transform-origin: center;
     transform: rotate(45deg);
-    bottom: 250%;
     transition: transform 0.25s; }
   .is-active-menuButton .menuButton__icon:after {
-    transform-origin: bottom left;
+    bottom: 0;
+    transform-origin: center;
     transform: rotate(-45deg);
-    bottom: -250%;
     transition: transform 0.25s; }
 
 .forceAspect {
@@ -1069,8 +1136,11 @@ label {
 .socialLinks {
   padding-left: 0;
   list-style-type: none;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between; }
+  -ms-flex-direction: row;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
   .socialLinks > li {
     display: inline-block; }
     .socialLinks > li a:hover svg {
@@ -1084,14 +1154,14 @@ label {
 .buttonField {
   margin-bottom: 1em;
   position: relative;
-  height: 30px; }
+  height: 35px; }
   .buttonField input {
-    height: 30px;
+    height: 35px;
     width: calc(100% - 30px);
     padding: 0.25em 0.5em;
     background: #EBEBEB;
     border: none;
-    font-size: 0.8em;
+    font-size: 1em;
     border-radius: 1px 0 0 1px;
     position: absolute;
     left: 0; }
@@ -1099,9 +1169,9 @@ label {
     position: absolute;
     right: 0;
     background: #8FAFBF;
-    width: 30px;
-    height: 30px;
-    padding: 7px;
+    width: 35px;
+    height: 35px;
+    padding: 9px;
     border: none;
     border-radius: 0 1px 1px 0; }
     .buttonField button:hover {
@@ -1124,7 +1194,7 @@ label {
     border-right: 0; }
 
 .inline-list--uniform > li {
-  min-width: 100px;
+  min-width: 80px;
   text-align: center; }
 
 .inline-list--right > li:last-of-type {
@@ -1190,6 +1260,8 @@ label {
   .hide-for-tablet-down {
     display: none; }
   .show-for-tablet-only {
+    display: none; }
+  .show-for-tablet-up {
     display: none; } }
 
 @media screen and (min-width: 767px) {
@@ -1202,6 +1274,8 @@ label {
   .hide-for-xlarge-down {
     display: none; }
   .show-for-xlarge-only {
+    display: none; }
+  .show-for-xlarge-up {
     display: none; } }
 
 @media screen and (min-width: 1024px) {
@@ -1214,6 +1288,8 @@ label {
   .hide-for-huge-down {
     display: none; }
   .show-for-huge-only {
+    display: none; }
+  .show-for-huge-up {
     display: none; } }
 
 @media screen and (min-width: 1600px) {

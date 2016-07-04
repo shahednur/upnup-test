@@ -26,6 +26,12 @@
 	&:after{
 		clear: both;
 	}
+	
+	//this will collapse the page padding under the smallest breakpoint
+	//buys a little more space
+	@include bp-max(tablet){
+		padding:0;
+	}
 }
 
 .row--collapse{

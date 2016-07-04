@@ -59,9 +59,9 @@
 
 	        	<section id="heroText">
 	        		<div class="row">
-	        			<div class="xlarge-10 tablet-7 columns">
-	        				<h1>A precious commodity. Delivered with care.</h1>
-	        				<p class="large-text hide-for-tablet-down">Our purified water starts with only 100% natural spring water from the mountains of North Georgia. It is then filtered and processed by reverse osmosis.</p>
+	        			<div class="xlarge-10 tablet-8 columns">
+	        				<h1 class="heroText__headline">A precious commodity. <br class="show-for-small-only"/> Delivered with care.</h1>
+	        				<p class="heroText__copy hide-for-tablet-down">Our purified water starts with only 100% natural spring water from the mountains of North Georgia. It is then filtered and processed by reverse osmosis.</p>
 	        				<button class="button button--arrow button--white">Shop Our Products<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></button>
 	        			</div>
         			</div>
@@ -79,9 +79,9 @@
 				
 			<section id="callout" class="hide-for-tablet-down">
         		<div class="row">
-        			<div class="xlarge-10 tablet-7 columns">
-        				<h2>We deliver more than water. We deliver a promise. </h2>
-        				<p class="medium-text hide-for-xlarge-down">To some water is water. And coffee is just something you drink in the morning to wake up. But our customers in and around Atlanta demand more. </p>
+        			<div class="xlarge-9 tablet-7 columns">
+        				<h2 class="callout__headline">We deliver more than water. We deliver a promise. </h2>
+        				<p class="callout__copy medium-text hide-for-xlarge-down">To some water is water. And coffee is just something you drink in the morning to wake up. But our customers in and around Atlanta demand more. </p>
         				<button class="button">See The Fontis Difference</button> 
         			</div>
         		</div>
@@ -164,7 +164,7 @@
         			<div class="xlarge-7 tablet-9 small-12 columns columns--centered">
         				<h2>Experience the Fontis Difference.</h2>
         				<p>Shop today and have the fresh, delicious taste of Fontis delivered to your home or office.</p>
-        				<button class="button">Shop Now</button>
+        				<button class="button button--grey">Shop Now</button>
         			</div>
         		</div>
         	</section>
@@ -180,8 +180,10 @@
 
         		<div class="row">
         			<div class="xlarge-3 columns">
-        				<p><span class="semibold">Fontis Water</span><br/>
-        					3929 Cantono Road
+        				<p class="normal white-text">
+        					<span class="semibold show-for-xlarge-up">Fontis Water</span>
+        					<span class="show-for-xlarge-down">Fontis Water</span><br/>
+        					3929 Canton Road<span class="show-for-tablet-only">,</span> <br class="show-for-tablet-down"/>
         					Marietta, GA 30066
         				</p>
 
@@ -234,7 +236,7 @@
         			</div>
 
         			<div id="connectInfo" class="xlarge-3 columns columns--skinny">
-        				<p class="semibold last">Stay Connected</p>
+        				<p class="white-text semibold last">Stay Connected</p>
         				<form action="">
         					<label for="newsletter_subscribe">Sign-Up for Our Newsletter</label>
         					<div class="buttonField">

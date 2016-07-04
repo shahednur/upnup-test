@@ -1,11 +1,13 @@
 .button{
 	color: $dark-blue;
 	display: inline-block;
+	font-size: 1.125em;
 	font-weight: 600;
 	padding: 0.5em 0.75em;
 	border-radius: 2px;
 	border:1px solid $dark-blue;
 	background: none;
+	white-space: nowrap;
 
 	&:hover{
 		cursor: pointer;
@@ -19,6 +21,7 @@
 	padding-left:0;
 	padding-right:0;
 	border-width: 0;	
+	font-size: 1rem;
 
 	&:hover{
 		background: none;
@@ -53,6 +56,11 @@
 .button--white{
 	color: $white;
 	border-color: $white;
+}
+
+.button--grey{
+	color: $dark-grey;
+	border-color: $dark-grey;
 }
 
 .button--nohov{

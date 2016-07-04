@@ -1,5 +1,5 @@
 @mixin primary-stack{
-	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-family: "OpenSans", Helvetica, sans-serif;
 }
 
 @mixin transition($what, $time){
@@ -75,4 +75,17 @@
   @if map-has-key($breakpoints, $low) and map-has-key($breakpoints, $high) {
     @media screen and ( min-width: #{map-get($breakpoints, $low)}px) and ( max-width: #{map-get($breakpoints, $high)-1}px){ @content; }
   }
+}
+
+@mixin font-face($name, $path, $weight, $style){
+	@font-face{
+		font-family: '#{$name}';
+	    src: url("#{$path}.eot?") format("eot"),
+	         url("#{$path}.woff2") format("woff2"),
+	         url("#{$path}.woff") format("woff"),
+	         url("#{$path}.ttf") format("truetype"),
+	         url("#{$path}.svg##{$name}") format("svg");
+	    @if ($weight){ font-weight: #{$weight}; }
+	    @if ($style){ font-style: #{$style}; }
+	}
 }

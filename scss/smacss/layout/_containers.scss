@@ -74,7 +74,7 @@
 	display:inline-block;
 	padding: 0 0.75em;
 	padding-right: 0;
-	width: 50px;
+	width: calc(50px + 0.75em);
 }
 
 #banner{
@@ -112,14 +112,30 @@
 	width: 100%;
 	z-index:1;
 	padding-bottom: 2em;
-	color: #FFF;
+	
+	.heroText__headline{
+		color: #FFF;
+	}
+
+	.heroText__copy{
+		color: #FFF;
+		font-size: 1.5em;
+		margin-bottom:1.5em;
+	}
+
+	@include bp-max(xlarge){
+		.heroText__copy{
+			font-size: 1.25em;
+			margin-bottom: 1em;
+		}
+	}
 
 	@include bp-max(tablet){
 		padding-top:3em;
 		text-align: center;
 		@include linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75));
 
-		h1{
+		.heroText__headline{
 			font-size: 1.3125em;
 			margin-bottom: 1em;
 			font-weight: 600;
@@ -131,7 +147,7 @@
 	position:absolute;
 	bottom:0;
 	right: $column-gutters-normal;
-	max-width: 325px;
+	max-width: 335px;
 
 	@include bp-max(tablet){
 		max-width: 275px;
@@ -144,8 +160,23 @@
 #callout,
 #secondary-callout{
 	background: $light-grey;
-	padding:2.5em 0;
+	padding:2.25em 0;
+
+	@include bp-max(xlarge){
+		.callout__headline{
+			margin-bottom: 1.25rem;
+		}
+	}
 }
+
+/*
+//This seems silly, why change the spacing in this one place?
+//the comps show a bit more spacing in the first callout section...
+#callout{
+	.callout__headline{margin-bottom: 1rem;}
+	.callout__copy{margin-bottom: 1.5rem;}
+}
+*/
 
 #secondary-callout{
 	text-align: center;
@@ -224,15 +255,20 @@
 }
 
 #connectInfo{
+	label{
+		color: $light-grey;
+		white-space: nowrap;
+	}
+
 	@include bp-max(xlarge){
-		max-width: 250px;
+		max-width: 225px;
 		float:none;
 		clear: both;
 		margin:0 auto;
 	}
 	
 	.buttonField{
-		margin-bottom: 2em;
+		margin-bottom: 2rem;
 	}
 }
 

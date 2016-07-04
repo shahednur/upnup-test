@@ -3,8 +3,8 @@
 	background: none;
 	border: none;
 	position: relative;
-	width: 35px;
-	height: 50px;
+	width: 33px;
+	height: 30px;
 }
 
 .menuButton__icon{
@@ -23,13 +23,13 @@
 		background: $white;
 		height: 3px;
 		position: absolute;
-		bottom: 200%;
+		bottom: 7px;
 		left: 0;
 		@include transition(transform, 0.25s);
 	}
 
 	&:after{
-		bottom: -200%;
+		bottom: -7px;
 	}
 }
 
@@ -39,16 +39,16 @@
 		background: none;
 
 		&:before{
-			transform-origin:top left;
+			bottom:0;
+			transform-origin:center;
 			transform: rotate(45deg);
-			bottom:250%;
 			@include transition(transform, 0.25s);
 		}
 
 		&:after{
-			transform-origin: bottom left;
+			bottom:0;
+			transform-origin:center;
 			transform: rotate(-45deg);
-			bottom: -250%;
 			@include transition(transform, 0.25s);
 		}
 	}

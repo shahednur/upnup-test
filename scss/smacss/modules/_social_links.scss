@@ -1,8 +1,11 @@
 .socialLinks{
 	padding-left:0;
 	list-style-type: none;
-	display:flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
 	justify-content: space-between;
+	-ms-flex-pack: justify;
 	
 	& > li{
 		display: inline-block;
