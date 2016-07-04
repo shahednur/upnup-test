@@ -531,14 +531,14 @@ label {
  * operates mobile first
  */
 .row {
-  max-width: 1052px;
+  max-width: 1064px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 0.875em; }
+  padding: 0 1.25em; }
   .row .row {
     padding: 0;
-    margin-left: -0.875em;
-    margin-right: -0.875em; }
+    margin-left: -1.25em;
+    margin-right: -1.25em; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -556,7 +556,7 @@ label {
 
 .column,
 .columns {
-  padding: 0 0.875em;
+  padding: 0 1.25em;
   box-sizing: border-box;
   margin: 0;
   float: left;
@@ -820,7 +820,7 @@ label {
   bottom: 0;
   max-width: 335px;
   position: absolute;
-  right: 0.875em; }
+  right: 1.25em; }
   @media screen and (max-width: 766px) {
     #hero {
       max-width: 275px;
@@ -1278,7 +1278,7 @@ label {
   fill: #FFFFFF; }
 
 .icon-fontis {
-  width: 125px;
+  width: 115px;
   height: 50px; }
 
 .icon-georgia-grown {
