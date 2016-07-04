@@ -64,7 +64,7 @@
 	        			<div class="xlarge-10 tablet-8 columns">
 	        				<h1 class="heroText__headline">A precious commodity. <br class="show-for-small-only"/> Delivered with care.</h1>
 	        				<p class="heroText__copy hide-for-tablet-down">Our purified water starts with only 100% natural spring water from the mountains of North Georgia. It is then filtered and processed by reverse osmosis.</p>
-	        				<button class="button button--arrow button--white">Shop Our Products<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></button>
+	        				<a href="#" class="button button--arrow button--white">Shop Our Products<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></a>
 	        			</div>
         			</div>
         		</section> 
@@ -89,7 +89,7 @@
         			<div class="xlarge-9 tablet-7 columns">
         				<h2 class="callout__headline">We deliver more than water. We deliver a promise. </h2>
         				<p class="callout__copy medium-text hide-for-xlarge-down">To some water is water. And coffee is just something you drink in the morning to wake up. But our customers in and around Atlanta demand more. </p>
-        				<button class="button">See The Fontis Difference</button> 
+        				<a href="#" class="button">See The Fontis Difference</a> 
         			</div>
         		</div>
         	</section>
@@ -117,7 +117,7 @@
 								</div>
 							</div>
 							<div class="productCallout__overlay">
-								<button class="productCallout__button button button--white button--arrow">Shop Now<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></button>
+								<a href="#" class="productCallout__button button button--white button--arrow">Shop Now<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></a>
 							</div>
 							<h3 class="productCallout__title">
 								Bottled water
@@ -137,7 +137,7 @@
 								</div>
 							</div>
 							<div class="productCallout__overlay">
-								<button class="productCallout__button button button--white button--arrow">Shop Now<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></button>
+								<a href="#" class="productCallout__button button button--white button--arrow">Shop Now<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></a>
 							</div>
 							<h3 class="productCallout__title">
 								Coffee and Tea
@@ -157,7 +157,7 @@
 								</div>
 							</div>
 							<div class="productCallout__overlay">
-								<button class="productCallout__button button button--white button--arrow">Shop Now<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></button>
+								<a href="#" class="productCallout__button button button--white button--arrow">Shop Now<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></a>
 							</div>
 							<h3 class="productCallout__title">
 								Water Filtration
@@ -174,7 +174,7 @@
         			<div class="xlarge-7 tablet-9 small-12 columns columns--centered">
         				<h2>Experience the Fontis Difference.</h2>
         				<p>Shop today and have the fresh, delicious taste of Fontis delivered to your home or office.</p>
-        				<button class="button button--grey">Shop Now</button>
+        				<a href="#" class="button button--grey">Shop Now</a>
         			</div>
         		</div>
         	</section>
@@ -199,7 +199,7 @@
         				</p>
 
         				<p class="phone"><a class="large-blue-text" href="tel:6784941981">678-494-1981</a></p>
-        				<button class="button button--white button--arrow button--invisible button--nohov hide-for-xlarge-down">Donation Request<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></button>
+        				<a href="#" class="button button--white button--arrow button--invisible button--nohov hide-for-xlarge-down">Donation Request<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></a>
         			</div>
 
         			<div class="xlarge-9 columns">
@@ -276,7 +276,7 @@
         					</li>
         				</ul>
 
-        				<button class="button button--white button--arrow button--invisible button--nohov show-for-xlarge-down">Donation Request<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></button>
+        				<a href="#" class="button button--white button--arrow button--invisible button--nohov show-for-xlarge-down">Donation Request<svg class="icon-arrow" width="10" height="15"><use xlink:href="#arrow"></use></svg></a>
         			</div>
         		</div>
         	</footer>

@@ -724,6 +724,11 @@ label {
 
 #primaryHeader {
   padding-top: 1.25em; }
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    #primaryHeader {
+      padding-top: 2em; }
+      #primaryHeader .menuButton {
+        margin-top: 0.5em; } }
 
 #allNav {
   left: 0;
@@ -993,15 +998,18 @@ label {
   background: none;
   border: none;
   position: relative;
-  width: 33px;
-  height: 30px; }
+  width: 27px;
+  height: 30px;
+  padding: 0; }
 
 .menuButton__icon {
   display: block;
   width: 100%;
   background: #FFFFFF;
   height: 3px;
-  position: relative; }
+  position: relative;
+  top: 0;
+  left: 0; }
   .menuButton__icon:before, .menuButton__icon:after {
     content: "";
     display: block;
@@ -1155,32 +1163,32 @@ label {
   position: relative;
   height: 35px; }
   .buttonField input {
-    height: 35px;
-    width: calc(100% - 30px);
-    padding: 0.25em 0.5em;
     background: #EBEBEB;
+    border-radius: 1px 0 0 1px;
     border: none;
     font-size: 1em;
-    border-radius: 1px 0 0 1px;
+    height: 35px;
+    left: 0;
+    padding: 0.25em 0.5em;
     position: absolute;
-    left: 0; }
+    width: calc(100% - 30px); }
   .buttonField button {
-    position: absolute;
-    right: 0;
     background: #8FAFBF;
-    width: 35px;
+    border-radius: 0 1px 1px 0;
+    border: none;
     height: 35px;
     padding: 9px;
-    border: none;
-    border-radius: 0 1px 1px 0; }
+    position: absolute;
+    right: 0;
+    width: 35px; }
     .buttonField button:hover {
       cursor: pointer;
       background: #162F4C;
       transition: all 0.25s; }
     .buttonField button svg {
       fill: #FFFFFF;
-      width: 15px;
-      height: 15px; }
+      height: 15px;
+      width: 15px; }
 
 .inline-list {
   list-style-type: none;

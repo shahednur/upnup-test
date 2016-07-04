@@ -7,6 +7,14 @@
 
 #primaryHeader{
 	padding-top:1.25em;
+
+	@include bp-range(tablet, xlarge){
+		padding-top: 2em;
+
+		.menuButton{
+			margin-top: 0.5em;
+		}
+	}
 }
 
 #allNav{
