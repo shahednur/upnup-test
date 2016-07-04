@@ -531,14 +531,14 @@ label {
  * operates mobile first
  */
 .row {
-  max-width: 1064px;
+  max-width: 1052px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 1.25em; }
+  padding: 0 0.875em; }
   .row .row {
     padding: 0;
-    margin-left: -1.25em;
-    margin-right: -1.25em; }
+    margin-left: -0.875em;
+    margin-right: -0.875em; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -556,7 +556,7 @@ label {
 
 .column,
 .columns {
-  padding: 0 1.25em;
+  padding: 0 0.875em;
   box-sizing: border-box;
   margin: 0;
   float: left;
@@ -820,7 +820,7 @@ label {
   bottom: 0;
   max-width: 335px;
   position: absolute;
-  right: 1.25em; }
+  right: 0.875em; }
   @media screen and (max-width: 766px) {
     #hero {
       max-width: 275px;
@@ -1267,12 +1267,12 @@ label {
  * Really simple transparent overlay
  */
 .overlay {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3); }
+  width: 100%; }
 
 [class^="icon-"] {
   fill: #FFFFFF; }
